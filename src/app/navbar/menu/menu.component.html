@@ -1,0 +1,37 @@
+<div class="main-navbar">
+  <div class="mainnav">
+    <div class="toggle-nav" (click)="showNavbar()">
+      <i class="pi pi-bars"></i>
+    </div>
+    <div class="menu-overlay" [style]="display" (click)="hideNavbar()"></div>
+    <ul class="nav-menu" [style]="right">
+      <li class="back-btn" (click)="hideNavbar()">
+        <div class="mobile-back">
+          {{'BACK' | translate}}
+          <i class="pi pi-angle-right"></i>
+        </div>
+      </li>
+      <li class="menu-item">
+        <a>{{'HOME' | translate}}</a>
+      </li>
+      <li class="menu-item">
+        <a>{{'HOTEL' | translate}}</a>
+      </li>
+      <li class="menu-item">
+        <a>{{'TOUR' | translate}}</a>
+      </li>
+      <li class="menu-item">
+        <a>{{'FLIGHT' | translate}}</a>
+      </li>
+      <li class="menu-item">
+        <a>{{'CAR' | translate}}</a>
+      </li>
+      <li class="menu-item">
+        <a>{{'RESTAURANT' | translate}}</a>
+      </li>
+      <li class="menu-item">
+        <a>{{'CONTACT' | translate}}</a>
+      </li>
+    </ul>
+  </div>
+</div>

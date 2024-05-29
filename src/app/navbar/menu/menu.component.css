@@ -1,0 +1,142 @@
+header .main-navbar {
+    text-align: center;
+}
+
+.nav-menu {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    direction: ltr;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.nav-menu li {
+    position: relative;
+    float: left;
+    display: block;
+    margin-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.nav-menu li a {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 23px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2px 18px;
+    letter-spacing: .07em;
+    position: relative;
+    border-radius: 4px;
+}
+
+.toggle-nav {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-nav i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.mobile-back {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .toggle-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .toggle-nav {
+        position: relative;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #00000085;
+        z-index: 2;
+        display: none;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        background-color: #fff;
+        width: 300px;
+        border-radius: 0;
+        border: 1px solid #eee;
+        top: 0;
+        height: 100vh;
+        right: -300px;
+        z-index: 99;
+        transition: all .3s ease;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .nav-menu li {
+        display: block;
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-menu li a:hover {
+        color: rgba(239, 63, 62, 1);
+    }
+
+    .nav-menu li a {
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: 600;
+        position: relative;
+        color: #222;
+    }
+
+    .back-btn {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .mobile-back {
+        padding: 20px;
+        font-size: 18px;
+        color: #222;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: 1px solid #efefef;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .mobile-back i {
+        font-weight: 600;
+    }
+
+}

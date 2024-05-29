@@ -1,0 +1,46 @@
+<header class="inner-page">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="menu">
+          <div class="brand-logo">
+            <a href="javascript:void(0)">
+              <img src="../../assets/img/icon/logo.png" alt="" class="img-fluid blur-up lazyload">
+            </a>
+          </div>
+          <nav>
+            <app-menu></app-menu>
+          </nav>
+          <div>
+            <ul class="actions">
+              <li class="translate">
+                <select name="" id=""(change)="switchLanguage($event)">
+                  <option class="language" value="vi">VI</option>
+                  <option class="language" value="en-US">Eng</option>
+                </select>
+              </li>
+              <li class="account">
+                <a href="/login">
+                  <i class="pi pi-user"></i>
+                </a>
+              </li>
+              <li class="settings">
+                <a (click)="showSetting()">
+                  <i class="pi pi-cog"></i>
+                </a>
+                <ul class="setting-open" [style]="ShowSetting" >
+                  <li class="setting--language">
+                    <select name="" id=""(change)="switchLanguage($event)">
+                      <option class="language" value="vi">VI</option>
+                      <option class="language" value="en-US">Eng</option>
+                    </select>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
