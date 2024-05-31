@@ -1,0 +1,146 @@
+.home-category {
+    margin-top: -10vh;
+    z-index: 1;
+}
+
+
+.ng-star-inserted {
+    width: 283px;
+    margin-right: 20px;
+}
+
+.top_box {
+    display: flex;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 10px 14px 1px #0000000d;
+}
+
+a {
+    transition: .5s ease;
+    letter-spacing: .03em;
+    text-decoration: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.blur-up {
+    transition: filter .4s;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+.blur-up.lazyload {
+    filter: blur(0);
+}
+
+.top_box .right-content {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h5 {
+    letter-spacing: .03em;
+    line-height: 1.2;
+    font-size: calc(14px + .00375*(100vw - 320px));
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+h5 i {
+    font-size: 12px;
+    color: #e1002c;
+    margin-left: 10px;
+}
+
+.right-content .rating {
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.right-content .rating span {
+    color: #fc3;
+    margin-right: 8px;
+    font-weight: 800;
+}
+
+.right-content p {
+    color: #0006;
+    margin-bottom: 5px;
+}
+
+.right-content p {
+    color: #0006;
+    margin-bottom: 5px;
+}
+
+h6 {
+    font-size: calc(14px + .00125*(100vw - 320px));
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: .03em;
+}
+
+.right-content h6{
+    font-size: calc(14px + .00125*(100vw - 320px));
+    color: #343434;
+    font-weight: 700;
+    margin-bottom: 0;
+}   
+
+.right-content h6 del{
+    font-size: 12px;
+    color: #717171;
+    margin-right: 10px;
+}
+
+.new-label {
+    position: absolute;
+    right: -20px;
+    background-image: url(../../../../assets/img/icon/iconcategory.png);
+    bottom: -20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 66px;
+}
+
+.new-label span {
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    bottom: 28px;
+    transform: rotate(-50deg);
+}
+
+@media (max-width: 1600px) {
+    .top_box .right-content {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 1460px) {
+    .top_box .right-content {
+        padding: 0 20px;
+    }
+}

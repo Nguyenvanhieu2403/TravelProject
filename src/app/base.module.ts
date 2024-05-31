@@ -14,6 +14,9 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { InputTextModule } from 'primeng/inputtext';
 import { TabViewModule } from 'primeng/tabview';
 import { ToolbarModule } from 'primeng/toolbar';
+import { RatingModule } from 'primeng/rating';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { HttpLoaderFactory } from './app.module';
 import { HomePageComponent } from './homePage/homePage.component';
@@ -25,6 +28,9 @@ import { SearchHolidayComponent } from './homePage/slide/searchHoliday/searchHol
 import { SearchFlightComponent } from './homePage/slide/searchFlight/searchFlight.component';
 import { SearchCarComponent } from './homePage/slide/searchCar/searchCar.component';
 import { SearchFoodComponent } from './homePage/slide/searchFood/searchFood.component';
+import { CategoryComponent } from './homePage/category/category.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CategoryItemComponent } from './homePage/category/CategoryItem/CategoryItem.component';
 
 
 @NgModule({
@@ -50,10 +56,11 @@ import { SearchFoodComponent } from './homePage/slide/searchFood/searchFood.comp
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    CarouselModule ,
+    RatingModule
   ],
   declarations: [
-    
     HomePageComponent,
     SlideComponent,
     SearchHotelComponent,
@@ -61,6 +68,8 @@ import { SearchFoodComponent } from './homePage/slide/searchFood/searchFood.comp
     SearchFlightComponent,
     SearchCarComponent,
     SearchFoodComponent,
+    CategoryComponent,
+    CategoryItemComponent,
   ],
   providers: [CommonModule, DatePipe],
 })
