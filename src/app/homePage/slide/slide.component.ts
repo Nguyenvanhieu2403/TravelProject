@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-slide',
@@ -7,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlideComponent implements OnInit {
 
-  tabs = ['hotel', 'holiday', 'flight', 'car', 'food'];
+  tabs = ['HOTEL', 'TOUR', 'FLIGHT', 'CAR', 'RESTAURANT'];
   selectedIndex: number = 0;
 
-  constructor() { }
+  constructor(private translate: TranslateService) { 
+    translate.setDefaultLang('vi');
+  }
 
   ngOnInit() {
   }

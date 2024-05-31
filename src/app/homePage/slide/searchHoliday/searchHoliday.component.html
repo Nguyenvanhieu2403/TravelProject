@@ -1,0 +1,31 @@
+<div class="search-section shadow">
+  <div class="search-box">
+    <div class="left-part">
+      <div class="p-toolbar-group-start search-body title-hotel">
+        <h6>DEPART FROM</h6>
+        <input type="text" name="text" placeholder="starting from" class="form-control">
+      </div>
+      <div class="p-toolbar-group-start search-body title-hotel">
+        <h6>WHERE TO</h6>
+        <input type="text" name="text" placeholder="going to" class="form-control">
+      </div>
+      <div class="p-toolbar-group-center search-body">
+        <h6>CHECK OUT</h6>
+        <input
+          class="form-control"
+          placeholder="durring date"
+          name="dpOut"
+          [(ngModel)]="dateOut"
+          ngbDatepicker
+          #dOut="ngbDatepicker"
+          (click)="dOut.toggle()"
+			  />
+      </div>
+      <div class="p-toolbar-group-end search-body btn-search">
+        <div class="right-part">
+          <a href="/" class="btn btn-solid color1">SEARCH</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

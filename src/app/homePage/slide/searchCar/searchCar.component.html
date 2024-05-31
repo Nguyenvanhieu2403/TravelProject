@@ -1,0 +1,43 @@
+<div class="search-section shadow">
+  <div class="search-box">
+    <div class="left-part">
+      <div class="p-toolbar-group-start search-body title-hotel">
+        <h6>PICK UP</h6>
+        <input type="text" name="text" placeholder="Paris, France" class="form-control">
+      </div>
+      <div class="p-toolbar-group-start search-body title-hotel">
+        <h6>DROP OFF</h6>
+        <input type="text" name="text" placeholder="Toulouse, France" class="form-control">
+      </div>
+      <div class="p-toolbar-group-center search-body">
+        <h6>PICKUP TIME</h6>
+        <input
+          class="form-control"
+          placeholder="18 april"
+          name="dpIn"
+          [(ngModel)]="dateIn"
+          ngbDatepicker
+          #dIn="ngbDatepicker"
+          (click)="dIn.toggle()"
+        />
+      </div>
+      <div class="p-toolbar-group-center search-body">
+        <h6>DROPOFF TIME</h6>
+        <input
+          class="form-control"
+          placeholder="drop off date & time"
+          name="dpOut"
+          [(ngModel)]="dateOut"
+          ngbDatepicker
+          #dOut="ngbDatepicker"
+          (click)="dOut.toggle()"
+			  />
+      </div>
+      <div class="p-toolbar-group-end search-body btn-search">
+        <div class="right-part">
+          <a href="/" class="btn btn-solid color1">SEARCH</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

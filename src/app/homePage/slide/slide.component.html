@@ -12,30 +12,18 @@
                 <h1>Where Do You Want Go ?</h1>
                 <h3>Experience world class services trip in Japan featured</h3>
                 <ul id="pills-tab" role="tablist" class="nav mix-pills nav-pills mb-3">
-                  <!-- <li class="nav-item">
-                    <a class="nav-link" id="pills-hotel-tab">hotel</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="pills-holiday-tab">holiday</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="pills-flight-tab">flight</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="pills-car-tab">car</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="pills-food-tab">food</a>
-                  </li> -->
-
                   <li class="nav-item" *ngFor="let tab of tabs; let i = index" 
                       [ngClass]="{'active': selectedIndex === i}" 
                       (click)="selectTab(i)">
-                    <a class="nav-link">{{ tab }}</a>
+                    <a class="nav-link">{{ tab | translate }}</a>
                   </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
-                  <app-searchHotel></app-searchHotel>
+                  <app-searchHotel *ngIf="selectedIndex == 0"></app-searchHotel>
+                  <app-searchHoliday *ngIf="selectedIndex == 1"></app-searchHoliday>
+                  <app-searchFlight *ngIf="selectedIndex == 2"></app-searchFlight>
+                  <app-searchCar *ngIf="selectedIndex == 3"></app-searchCar>
+                  <app-searchFood *ngIf="selectedIndex == 4"></app-searchFood>
                 </div>
               </div>
             </div>

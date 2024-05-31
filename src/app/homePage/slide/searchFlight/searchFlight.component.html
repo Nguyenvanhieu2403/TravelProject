@@ -1,0 +1,84 @@
+<div class="search-section shadow">
+  <div class="search-box">
+    <div class="left-part">
+      <div class="p-toolbar-group-start search-body title-hotel">
+        <h6>FROM</h6>
+        <input type="text" name="text" placeholder="Dubai(DXB)" class="form-control">
+      </div>
+      <div class="p-toolbar-group-start search-body title-hotel">
+        <h6>TO</h6>
+        <input type="text" name="text" placeholder="Paris(PAR)" class="form-control">
+      </div>
+      <div class="p-toolbar-group-center search-body">
+        <h6>DEPARTURE</h6>
+        <input
+          class="form-control"
+          placeholder="Departure Date"
+          name="dpIn"
+          [(ngModel)]="dateIn"
+          ngbDatepicker
+          #dIn="ngbDatepicker"
+          (click)="dIn.toggle()"
+        />
+      </div>
+      <div class="p-toolbar-group-center search-body">
+        <h6>RETURN</h6>
+        <input
+          class="form-control"
+          placeholder="Return Date"
+          name="dpOut"
+          [(ngModel)]="dateOut"
+          ngbDatepicker
+          #dOut="ngbDatepicker"
+          (click)="dOut.toggle()"
+			  />
+      </div>
+      <div class="p-toolbar-group-center search-body search-traveller">
+        <h6>TRAVELLER</h6>
+        <input type="text" name="text" placeholder="1 Traveller" class="form-control" (click)="Show()">
+        <div class="selector-box-flight show" [style]="StyleTravel">
+          <div class="room-cls">
+            <div class="qty-box">
+              <label for="" class="me-0">adult</label>
+              <div class="input-group">
+                <button class="btn quantity-left-minus" (click)="MinusAdult()"> - </button>
+                <input type="text" [(ngModel)]="Adult" class="form-control qty-input input-number">
+                <button class="btn quantity-right-plus" (click)="PlusAdult()"> + </button>
+              </div>
+            </div>
+            <div class="qty-box">
+              <label for="" class="me-0">children</label>
+              <div class="input-group">
+                <button class="btn quantity-left-minus" (click)="MinusChildren()"> - </button>
+                <input type="text" [(ngModel)]="Children" class="form-control qty-input input-number">
+                <button class="btn quantity-right-plus" (click)="PlusChildren()"> + </button>
+              </div>
+            </div>
+          </div>
+          <div class="flight-class">
+            <div class="form-check ng-star-inserted">
+              <input type="radio" name="FlightType" id="economy" class="form-check-input radio_animated">
+              <label for="economy" class="form-check-label">  economy </label>
+            </div>
+            <div class="form-check ng-star-inserted">
+              <input type="radio" name="FlightType" id="premium" class="form-check-input radio_animated">
+              <label for="premium" class="form-check-label"> premium </label>
+            </div>
+            <div class="form-check ng-star-inserted">
+              <input type="radio" name="FlightType" id="business" class="form-check-input radio_animated">
+              <label for="business" class="form-check-label"> business  </label>
+            </div>
+          </div>
+          <div class="bottom-part">
+            <a href="javascript:void(0)" class="btn">apply</a>
+          </div>
+        </div>
+      </div>
+      <div class="p-toolbar-group-end search-body btn-search">
+        <div class="right-part">
+          <a href="/" class="btn btn-solid color1">SEARCH</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -21,6 +21,10 @@ import { SearchHotelComponent } from './homePage/slide/searchHotel/searchHotel.c
 import { SlideComponent } from './homePage/slide/slide.component';
 import { MenuComponent } from './navbar/menu/menu.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SearchHolidayComponent } from './homePage/slide/searchHoliday/searchHoliday.component';
+import { SearchFlightComponent } from './homePage/slide/searchFlight/searchFlight.component';
+import { SearchCarComponent } from './homePage/slide/searchCar/searchCar.component';
+import { SearchFoodComponent } from './homePage/slide/searchFood/searchFood.component';
 
 
 @NgModule({
@@ -39,13 +43,24 @@ import { NavbarComponent } from './navbar/navbar.component';
     FloatLabelModule,
     CalendarModule,
     InputNumberModule,
-    NgbModule
+    NgbModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   declarations: [
     
     HomePageComponent,
     SlideComponent,
-    SearchHotelComponent
+    SearchHotelComponent,
+    SearchHolidayComponent,
+    SearchFlightComponent,
+    SearchCarComponent,
+    SearchFoodComponent,
   ],
   providers: [CommonModule, DatePipe],
 })
