@@ -1,0 +1,57 @@
+.tap-top {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 50px;
+    right: -60px;
+    z-index: 8;
+    color: #fff;
+    text-align: center;
+    background: rgba(239, 63, 62, 1);
+    border: none;
+    font-size: 22px;
+    padding: 6px 5px 5px;
+    cursor: pointer;
+    transform: rotate(-15deg);
+    transition: all .5s ease;
+}
+
+.tap-top.top {
+    display: block;
+    right: 30px;
+    transition: all .5s ease;
+}
+
+.tap-top>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tap-top:after {
+    position: absolute;
+    content: "";
+    bottom: -12px;
+    background-color: #000;
+    width: 100%;
+    height: 11px;
+    left: 0;
+    transform: rotate(13deg);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+@keyframes all {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}

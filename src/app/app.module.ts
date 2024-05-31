@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { BaseModule } from './base.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MenuComponent } from './navbar/menu/menu.component';
+import { GoToTopComponent } from './common/GoToTop/GoToTop.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -19,6 +20,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     NavbarComponent,
     MenuComponent,
+    GoToTopComponent
    ],
   imports: [
     BrowserModule,

@@ -113,7 +113,7 @@ h6 {
 
 .new-label {
     position: absolute;
-    right: -20px;
+    right: -40px;
     background-image: url(../../../../assets/img/icon/iconcategory.png);
     bottom: -20px;
     background-size: cover;
