@@ -8,7 +8,7 @@ header {
 
 .inner-page{
     border-bottom: 1px solid rgba(255, 255, 255, .05);
-    background-color: rgb(167, 133, 133);
+    background-color: #0000002e;
 }
 
 .container .row {
@@ -22,6 +22,10 @@ header {
     width: 100%;
 }
 
+.menu {
+    width: 110% !important;
+}
+
 header .menu {
     display: flex;
     padding: 0 34px;
@@ -29,6 +33,8 @@ header .menu {
     /* justify-content: space-evenly; */
     width: 100%;
 }
+
+
 
 nav {
     margin: 0 auto;

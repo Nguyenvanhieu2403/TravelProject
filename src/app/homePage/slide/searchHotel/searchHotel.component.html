@@ -1,0 +1,58 @@
+<div class="search-section shadow">
+  <div class="search-box">
+    <div class="left-part">
+      <div class="p-toolbar-group-start search-body title-hotel">
+        <h6>HOTEL</h6>
+        <input type="text" name="text" placeholder="dubai" class="form-control">
+      </div>
+      <div class="p-toolbar-group-center search-body">
+        <h6>CHECK IN</h6>
+        <!-- <input type="date" placeholder="18 april" name="dp" ngbdatepicker="" class="form-control"> -->
+        <input
+          class="form-control"
+          placeholder="18 april"
+          name="dpIn"
+          [(ngModel)]="dateIn"
+          ngbDatepicker
+          #dIn="ngbDatepicker"
+          (click)="dIn.toggle()"
+        />
+      </div>
+      <div class="p-toolbar-group-center search-body">
+        <h6>CHECK OUT</h6>
+        <input
+          class="form-control"
+          placeholder="18 april"
+          name="dpOut"
+          [(ngModel)]="dateOut"
+          ngbDatepicker
+          #dOut="ngbDatepicker"
+          (click)="dOut.toggle()"
+			  />
+      </div>
+      <div class="p-toolbar-group-center search-body">
+        <h6>GUESTS</h6>
+        <div class="qty-box">
+          <div class="input-group">
+            <span class="input-group-prepend" >
+              <button type="button" class="btn quantity-left-minus" (click)="MinusGuests()">
+                <i class="pi pi-angle-down"></i>
+              </button>
+            </span>
+            <input [(ngModel)]="guests" type="text" name="quantity" class="form-control input-number">
+            <span class="input-group-prepend" >
+              <button type="button" class="btn quantity-right-plus" (click)="PlusGuests()">
+                <i class="pi pi-angle-up"></i>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="p-toolbar-group-end search-body btn-search">
+        <div class="right-part">
+          <a href="/" class="btn btn-solid color1">SEARCH</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

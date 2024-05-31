@@ -1,0 +1,47 @@
+<section class="home_section slide-1 p-0">
+  <div>
+    <div class="home home-mobile">
+      <video autoplay loop muted >
+        <source src="../../../assets/video/video-slide/slide1.mp4" type="video/mp4">
+      </video>
+      <div class="container custom-container mix-layout-section">
+        <div class="row">
+          <div class="col-xl-10 m-auto">
+            <div class="home-content mix-layout smaller-content">
+              <div class="bg-transparent">
+                <h1>Where Do You Want Go ?</h1>
+                <h3>Experience world class services trip in Japan featured</h3>
+                <ul id="pills-tab" role="tablist" class="nav mix-pills nav-pills mb-3">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" id="pills-hotel-tab">hotel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-holiday-tab">holiday</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-flight-tab">flight</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-car-tab">car</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-food-tab">food</a>
+                  </li> -->
+
+                  <li class="nav-item" *ngFor="let tab of tabs; let i = index" 
+                      [ngClass]="{'active': selectedIndex === i}" 
+                      (click)="selectTab(i)">
+                    <a class="nav-link">{{ tab }}</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <app-searchHotel></app-searchHotel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
