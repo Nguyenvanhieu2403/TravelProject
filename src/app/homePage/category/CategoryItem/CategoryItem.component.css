@@ -3,6 +3,11 @@
     z-index: 1;
 }
 
+.item {
+    width: 443.5px;
+    margin-right: 50px;
+}
+
 
 .ng-star-inserted {
     width: 283px;

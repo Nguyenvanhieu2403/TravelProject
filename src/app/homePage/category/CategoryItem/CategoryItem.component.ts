@@ -19,6 +19,7 @@ export class CategoryItemComponent implements OnInit {
     navSpeed: 700,
     autoplay: false
   }
+  
 
   constructor() { }
 

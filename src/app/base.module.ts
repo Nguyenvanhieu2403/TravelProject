@@ -22,8 +22,6 @@ import { HttpLoaderFactory } from './app.module';
 import { HomePageComponent } from './homePage/homePage.component';
 import { SearchHotelComponent } from './homePage/slide/searchHotel/searchHotel.component';
 import { SlideComponent } from './homePage/slide/slide.component';
-import { MenuComponent } from './navbar/menu/menu.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { SearchHolidayComponent } from './homePage/slide/searchHoliday/searchHoliday.component';
 import { SearchFlightComponent } from './homePage/slide/searchFlight/searchFlight.component';
 import { SearchCarComponent } from './homePage/slide/searchCar/searchCar.component';
@@ -31,6 +29,10 @@ import { SearchFoodComponent } from './homePage/slide/searchFood/searchFood.comp
 import { CategoryComponent } from './homePage/category/category.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CategoryItemComponent } from './homePage/category/CategoryItem/CategoryItem.component';
+import { HotelComponent } from './homePage/hotel/hotel.component';
+import { HotelTitleComponent } from './homePage/hotel/hotel-title/hotel-title.component';
+import { AnimatedImagesComponent } from './homePage/hotel/animated-images/animated-images.component';
+import { HoverRotateImgDirective } from './homePage/hotel/animated-images/HoverRotateImg.directive';
 
 
 @NgModule({
@@ -70,6 +72,10 @@ import { CategoryItemComponent } from './homePage/category/CategoryItem/Category
     SearchFoodComponent,
     CategoryComponent,
     CategoryItemComponent,
+    HotelComponent,
+    HotelTitleComponent,
+    AnimatedImagesComponent,
+    HoverRotateImgDirective,
   ],
   providers: [CommonModule, DatePipe],
 })

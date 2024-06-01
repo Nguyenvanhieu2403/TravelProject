@@ -1,3 +1,7 @@
+*{
+    font-family: Nunito, sans-serif;
+}
+
 header {
     position: absolute;
     top: 0;
