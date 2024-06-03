@@ -33,6 +33,8 @@ import { HotelComponent } from './homePage/hotel/hotel.component';
 import { HotelTitleComponent } from './homePage/hotel/hotel-title/hotel-title.component';
 import { AnimatedImagesComponent } from './homePage/hotel/animated-images/animated-images.component';
 import { HoverRotateImgDirective } from './homePage/hotel/animated-images/HoverRotateImg.directive';
+import { DiscountComponent } from './homePage/discount/discount.component';
+import { VideoHomeComponent } from './homePage/discount/video-home/video-home.component';
 
 
 @NgModule({
@@ -76,6 +78,8 @@ import { HoverRotateImgDirective } from './homePage/hotel/animated-images/HoverR
     HotelTitleComponent,
     AnimatedImagesComponent,
     HoverRotateImgDirective,
+    DiscountComponent,
+    VideoHomeComponent
   ],
   providers: [CommonModule, DatePipe],
 })
