@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="flight">
+    <h2>
+      featured... 
+      <span>destination</span>
+    </h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum has been standard.......</p>
+  </div>
+  <div class="slide-3 no-arrow">
+    <owl-carousel-o [options]="customOptions"  class="ng-star-inserted row flight-home">
+      <ng-template carouselSlide *ngFor="let item of flights ">
+        <app-FlightHomeItems [src]="item.src" [name]="item.name" [title]="item.title" [description]="item.description" [price]="item.price"></app-FlightHomeItems>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>

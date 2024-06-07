@@ -1,0 +1,155 @@
+.ng-star-inserted{
+    font-family: Nunito, sans-serif;
+}
+
+.owl-item {
+    width: 428.667px;
+    margin-right: 60px;
+}
+
+.blog-wrap {
+    border-radius: 25px;
+    box-shadow: 2.5px 4.33px 35px #0000000a;
+    transition: all .5s ease;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.blog-wrap .blog-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-wrap .blog-image .bg-size {
+    transition: all .5s ease;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    background-image: url("../../../../assets/img/flight-home/1.jpg");
+}
+
+.bg-size:before {
+    padding-top: 55%;
+    content: "";
+    display: block;
+}
+
+.destination-details {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.destination-details h5{
+    font-size: 14px;
+    color: #959595;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.destination-details h5 {
+    font-size: 14px;
+    color: #959595;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+h2 {
+    letter-spacing: .001em;
+    line-height: 32px;
+    text-transform: capitalize;
+}
+
+.destination-details h2 {
+    color: #000;
+    font-size: calc(18px + .0075*(100vw - 320px));
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+h6{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+
+.destination-details h6 {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #0000008f;
+    letter-spacing: .05em;
+    line-height: 1.5;
+}
+
+.btn.btn-rounded {
+    border-radius: 100px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.btn.btn-rounded.color2 {
+    background-color: rgba(0, 162, 247, 1);
+    box-shadow: 2.5px 4.33px 25px 0 rgba(0, 162, 247, .3);
+}   
+
+.blog_section.destination-section .destination-details .btn {
+    text-transform: capitalize;
+    font-size: calc(14px + .00375*(100vw - 320px));
+    font-size: 16px;
+}
+
+.btn.btn-rounded.color2:hover {
+    background-color: #fff;
+    color: rgba(0, 162, 247, 1);
+    transition: all .5s ease;
+    border: 1px solid rgba(0, 162, 247, 1);
+    box-shadow: 1px 11px 20px 0 rgba(0, 162, 247, .22);
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .container {
+        max-width: 1430px !important;
+    }
+}
+
+@media (min-width: 1461px) {
+    .container {
+        max-width: 1430px !;
+    }
+}

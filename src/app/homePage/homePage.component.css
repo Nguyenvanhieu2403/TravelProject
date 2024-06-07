@@ -14,20 +14,18 @@
     background-image: url(../../assets/img/discount-home/video-bg.jpg);
 }
 
-@media (max-width: 991px) {
-    section, .section-t-space {
-        padding-top: 60px;
-    }
+.section-b-space {
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
 }
 
-@media (max-width: 1199px) {
-    .video_section {
-        padding: 80px 0;
-    }
+.blog_section {
+    overflow: hidden;
 }
 
-@media (max-width: 1367px) {
-    section{
-        padding-top: 90px;
-    }
+.blog_section.section-b-space {
+    padding-bottom: 70px;
 }

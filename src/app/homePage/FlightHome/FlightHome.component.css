@@ -1,0 +1,63 @@
+.flight {
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 100px;
+}
+
+.flight h2{
+    font-size: calc(22px + .00875*(100vw - 320px));
+    color: gray;
+    font-weight: 400;
+    margin-bottom: 22px;
+    line-height: 32px;
+    margin-top: -2px;
+    text-transform: capitalize;
+}
+
+.flight h2 span {
+    color: rgba(0, 162, 247, 1);
+    font-weight: 900;
+}
+
+.flight p {
+    margin-bottom: 70px;
+    color: #cacaca;
+    font-size: calc(14px + .00125*(100vw - 320px));
+    font-weight: 600;
+}
+
+/* @media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px ;
+    }
+}
+
+@media (min-width: 1461px) {
+    .container {
+        max-width: 1430px ;
+    }
+} */
