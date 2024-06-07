@@ -29,3 +29,41 @@
 .blog_section.section-b-space {
     padding-bottom: 70px;
 }
+
+/* Banner */
+.bg-size {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../../assets/img/banner-home/background.jpg);
+}
+
+@media (max-width: 480px) {
+    .full-banner {
+        padding: 40px 0;
+    }
+}
+@media (max-width: 576px) {
+    .full-banner {
+        padding: 50px 0;
+    }
+}
+@media (max-width: 767px) {
+    .full-banner {
+        padding: 60px 0;
+    }
+}
+@media (max-width: 991px) {
+    .full-banner {
+        padding: 70px 0;
+    }
+}
+@media (max-width: 1199px) {
+    .full-banner {
+        padding: 100px 0;
+    }
+}

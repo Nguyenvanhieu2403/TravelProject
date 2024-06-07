@@ -37,6 +37,7 @@ import { DiscountComponent } from './homePage/discount/discount.component';
 import { VideoHomeComponent } from './homePage/discount/video-home/video-home.component';
 import { FlightHomeComponent } from './homePage/FlightHome/FlightHome.component';
 import { FlightHomeItemsComponent } from './homePage/FlightHome/FlightHomeItems/FlightHomeItems.component';
+import { BannerComponent } from './homePage/Banner/Banner.component';
 
 
 @NgModule({
@@ -84,6 +85,7 @@ import { FlightHomeItemsComponent } from './homePage/FlightHome/FlightHomeItems/
     VideoHomeComponent,
     FlightHomeComponent,
     FlightHomeItemsComponent,
+    BannerComponent
   ],
   providers: [CommonModule, DatePipe],
 })
