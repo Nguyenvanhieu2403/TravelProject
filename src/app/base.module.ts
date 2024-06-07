@@ -32,12 +32,16 @@ import { CategoryItemComponent } from './homePage/category/CategoryItem/Category
 import { HotelComponent } from './homePage/hotel/hotel.component';
 import { HotelTitleComponent } from './homePage/hotel/hotel-title/hotel-title.component';
 import { AnimatedImagesComponent } from './homePage/hotel/animated-images/animated-images.component';
-import { HoverRotateImgDirective } from './homePage/hotel/animated-images/HoverRotateImg.directive';
+import { HoverRotateImgDirective } from './directives/HoverRotateImg.directive';
 import { DiscountComponent } from './homePage/discount/discount.component';
 import { VideoHomeComponent } from './homePage/discount/video-home/video-home.component';
 import { FlightHomeComponent } from './homePage/FlightHome/FlightHome.component';
 import { FlightHomeItemsComponent } from './homePage/FlightHome/FlightHomeItems/FlightHomeItems.component';
 import { BannerComponent } from './homePage/Banner/Banner.component';
+import { EmergencyCallComponent } from './homePage/EmergencyCall/EmergencyCall.component';
+import { AnimationEmergencyComponent } from './homePage/EmergencyCall/animation-emergency/animation-emergency.component';
+import { EmergencyTitleComponent } from './homePage/EmergencyCall/emergency-title/emergency-title.component';
+import { AnimatedEmergencyImagesComponent } from './homePage/EmergencyCall/animated-images/animated-images.component';
 
 
 @NgModule({
@@ -85,7 +89,11 @@ import { BannerComponent } from './homePage/Banner/Banner.component';
     VideoHomeComponent,
     FlightHomeComponent,
     FlightHomeItemsComponent,
-    BannerComponent
+    BannerComponent,
+    EmergencyCallComponent,
+    AnimationEmergencyComponent,
+    EmergencyTitleComponent,
+    AnimatedEmergencyImagesComponent
   ],
   providers: [CommonModule, DatePipe],
 })

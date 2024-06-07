@@ -1,0 +1,82 @@
+.title {
+    text-align: center;
+}
+
+.title .title-label {
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(239, 63, 62, 1);
+    text-transform: capitalize;
+    padding: 4px 18px 6px;
+    line-height: 1;
+    font-family: Work Sans;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+h2{
+    letter-spacing: .001em;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.title h2, .title .h2 {
+    font-size: calc(20px + .00625*(100vw - 320px));
+    margin-top: 20px;
+    margin-bottom: 90px;
+    font-weight: 700;
+    position: relative;
+}
+
+.title h2 span {
+    font-family: Vampiro One, cursive;
+    font-size: calc(35px + .03125*(100vw - 320px));
+    position: absolute;
+    color: rgba(239, 63, 62, .1);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    z-index: -1;
+    font-weight: 400;
+}
+
+@media (max-width: 576px) {
+    .title-1.title-5 p, .title-2 p, .title h2, .title .h2 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .title-2 p, .title h2, .title .h2 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    h2, .h2 {
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .title h2, .title .h2 {
+        margin-bottom: 70px;
+    }
+
+    .title h2{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1367px) {
+    .title h2, .title .h2 {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1460px) {
+    h2, .h2 {
+        line-height: 28px;
+    }
+}

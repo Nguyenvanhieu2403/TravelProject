@@ -189,6 +189,14 @@
     padding: 10px 16px;
 }
 
+.btn.btn-rounded.color1:hover {
+    background-color: #fff;
+    color: rgba(239, 63, 62, 1);
+    transition: all .5s ease;
+    border: 1px solid rgba(239, 63, 62, 1);
+    box-shadow: 1px 11px 20px 0 rgba(239, 63, 62, .22);
+}
+
 @media (max-width: 480px) {
     .banner-content {
         text-align: center;

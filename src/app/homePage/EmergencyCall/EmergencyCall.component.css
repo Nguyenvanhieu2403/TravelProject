@@ -1,0 +1,87 @@
+.emergency {
+    padding: 100px 0;
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 60px;
+}
+
+.about-text h5 {
+    font-size: calc(14px + .0025*(100vw - 320px));
+    font-style: italic;
+    color: #adadad;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: -2px;
+    letter-spacing: .03em;
+    line-height: 1.2;
+}
+
+.about-text h5 span {
+    color: rgba(239, 63, 62, 1);
+}
+
+.about-text h3 {
+    font-size: calc(16px + .005*(100vw - 320px));
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: .001em;
+    margin-bottom: 35px;
+    line-height: 1.2;
+    color: #000;
+}
+
+.about-text h2 {
+    font-size: calc(18px + 27 * (100vw - 320px) / 1600);
+    color: rgba(239, 63, 62, 1);
+    font-weight: 800;
+    margin-bottom: 35px;
+    letter-spacing: .001em;
+    line-height: 32px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    line-height: 28px;
+    letter-spacing: .06em;
+    text-align: left;
+    margin-bottom: -7px;
+    color: #000000ad;
+}
+
+.about-text p {
+    font-size: calc(14px + .005*(100vw - 320px));
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.btn.btn-curve {
+    border-radius: 5px;
+    background-color: rgba(239, 63, 62, 1);
+    color: #fff;
+    padding: 9px 20px;
+    box-shadow: 1px 11px 20px 0 rgba(239, 63, 62, .12);
+}
+
+.btn.btn-curve.btn-lower {
+    text-transform: capitalize;
+}
+
+@media (max-width: 1367px) {
+    .about-text {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .about-text {
+        padding-left: 0;
+        margin-top: 30px;
+        height: auto;
+    }
+}
