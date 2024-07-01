@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="basic-section">
+        <h2>relax and enjoy</h2>
+        <h4>luxury hotel & best resort</h4>
+        <div class="video-icon">
+          <span (click)="open(content1)"></span>
+          <div class="animation-circle-inverse">
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #content1 let-c="close" let-d="dismiss" >
+	<div class="modal-content video-modal">
+    <div class="modal-body">
+      <button type="button" class="btn-close" (click)="c('Save click')">
+        <span aria-hidden="true">x</span>
+      </button>
+      <iframe src="https://www.youtube.com/embed/ezuKIzXJuz8" frameborder="0" allowfullscreen></iframe>
+    </div>
+	</div>
+</ng-template>

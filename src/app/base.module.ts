@@ -42,6 +42,7 @@ import { EmergencyCallComponent } from './homePage/EmergencyCall/EmergencyCall.c
 import { AnimationEmergencyComponent } from './homePage/EmergencyCall/animation-emergency/animation-emergency.component';
 import { EmergencyTitleComponent } from './homePage/EmergencyCall/emergency-title/emergency-title.component';
 import { AnimatedEmergencyImagesComponent } from './homePage/EmergencyCall/animated-images/animated-images.component';
+import { HotelVideoHomepageComponent } from './homePage/hotel-video-homepage/hotel-video-homepage.component';
 
 
 @NgModule({
@@ -93,7 +94,8 @@ import { AnimatedEmergencyImagesComponent } from './homePage/EmergencyCall/anima
     EmergencyCallComponent,
     AnimationEmergencyComponent,
     EmergencyTitleComponent,
-    AnimatedEmergencyImagesComponent
+    AnimatedEmergencyImagesComponent,
+    HotelVideoHomepageComponent
   ],
   providers: [CommonModule, DatePipe],
 })

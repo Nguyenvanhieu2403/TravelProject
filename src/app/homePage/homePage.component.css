@@ -42,9 +42,32 @@
     background-image: url(../../assets/img/banner-home/background.jpg);
 }
 
+/* hotel video */
+
+.parallax-img {
+    background-attachment: fixed;
+}
+
+.video-section {
+    padding: 170px 0;
+}
+
+.hotel-video-homepage {
+    background-color: #00000059;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    background-image: url(../../assets/img/hotel_video_home/back.jpg);
+}
+
 @media (max-width: 480px) {
     .full-banner {
         padding: 40px 0;
+    }
+    .video-section {
+        margin: 20px 0;
     }
 }
 @media (max-width: 576px) {

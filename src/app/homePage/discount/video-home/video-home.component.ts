@@ -11,8 +11,8 @@ export class VideoHomeComponent implements OnInit {
 
   date: any;
   now: any;
-  targetDate: any = new Date(2024, 5, 8);
-  targetTime: any = this.targetDate.getTime();
+  targetDate: any;
+  targetTime: any;
   difference: any;
 
   @ViewChild('days', { static: true }) days!: ElementRef;
@@ -21,11 +21,15 @@ export class VideoHomeComponent implements OnInit {
   @ViewChild('seconds', { static: true }) seconds!: ElementRef;
 
   constructor(config: NgbModalConfig, private modalService: NgbModal,) {
-    config.backdrop = 'static';
-		config.keyboard = false;
+    config.keyboard = false;
    }
 
   ngOnInit() {
+
+    this.targetDate = new Date();
+    this.targetDate.setDate(this.targetDate.getDate() + 7);
+    this.targetTime = this.targetDate.getTime();
+
     setInterval(() => {
       this.tickTock();
       this.difference = this.targetTime - this.now;
