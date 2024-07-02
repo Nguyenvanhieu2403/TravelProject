@@ -49,6 +49,7 @@ import { FoodHomepageItemsComponent } from './homePage/Food-HomePage/Food-Homepa
 import { GallaryHomepageComponent } from './homePage/Gallary-homepage/Gallary-homepage.component';
 import { GallaryHomepageTitleComponent } from './homePage/Gallary-homepage/Gallary-homepage-title/Gallary-homepage-title.component';
 import { GallaryHomepageItemsComponent } from './homePage/Gallary-homepage/Gallary-homepage-items/Gallary-homepage-items.component';
+import { SubcribeHomepageComponent } from './homePage/subcribe-homepage/subcribe-homepage.component';
 
 
 @NgModule({
@@ -107,7 +108,8 @@ import { GallaryHomepageItemsComponent } from './homePage/Gallary-homepage/Galla
     FoodHomepageItemsComponent,
     GallaryHomepageComponent,
     GallaryHomepageTitleComponent,
-    GallaryHomepageItemsComponent
+    GallaryHomepageItemsComponent,
+    SubcribeHomepageComponent
   ],
   providers: [CommonModule, DatePipe],
 })

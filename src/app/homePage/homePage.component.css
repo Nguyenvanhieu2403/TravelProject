@@ -66,6 +66,11 @@
     padding-top: 100px;
 }
 
+.medium-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 @media (max-width: 480px) {
     .full-banner {
         padding: 40px 0;
