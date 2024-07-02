@@ -1,0 +1,217 @@
+a {
+    transition: .5s ease;
+    letter-spacing: .03em;
+    text-decoration: none;
+    color: rgba(13, 110, 253,1);
+}
+
+a:hover {
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.category-box {
+    border-radius: 25px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+.category-box .side-effect:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    height: 100%;
+    background-color: #0000000d;
+    border-radius: 30px;
+    width: calc(100% - 66px);
+    left: 33px;
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+.category-box .side-effect:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    height: 100%;
+    background-color: #0000001a;
+    border-radius: 30px;
+    width: calc(100% - 16px);
+    left: 8px;
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+.blur-up.lazyload {
+    filter: blur(0);
+}
+
+.category-box img {
+    transition: all .5s ease;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.category-box .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: linear-gradient(to top, rgba(0, 0, 0, .6) 0%, rgba(231, 56, 39, 0) 100%);
+}
+
+.category-box .top-bar {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.category-box .top-bar .offer {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 13px;
+    background-color: rgba(239, 63, 62, 1);
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.category-box .top-bar h5{
+    font-size: calc(14px + .00375*(100vw - 320px));
+    color: rgba(239, 63, 62, 1);
+    padding: 3px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: .09em;
+}
+
+.category-box .top-bar h5 del{
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.category-box .like-cls {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.category-box .like-cls i {
+    color: #e1002c;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 100%;
+    font-size: 16px;
+}
+
+.category-box .like-cls i .effect {
+    border-radius: 50%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    transition: height 5s ease, width 5s ease;
+    z-index: 0;
+    opacity: 0;
+}
+
+.category-box .like-cls i .effect:after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .6);
+    animation: effect 2s linear 1s infinite;
+}
+
+.category-box .bottom-bar {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    transition: all .5s ease;
+}
+
+.category-box .bottom-bar .top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 4px;
+}
+
+.category-box .bottom-bar .top h5 {
+    font-size: calc(14px + .0025*(100vw - 320px));
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-right: 15px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.category-box .rating span.ng-star-inserted {
+    font-size: 18px;
+    margin: 0 2px;
+    color: #fc3;
+}
+
+.category-box .bottom-bar .top h6 {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.category-box .bottom-bar p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffffb3;
+}
+
+@keyframes effect {
+    0% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.4);
+        opacity: .4;
+    }
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+
+
+.category-box:hover .bottom-bar {
+    bottom: 34px;
+    transition: all .5s ease;
+}
+
+.category-box:hover .like-cls .effect {
+    opacity: 1 !important;
+}
+

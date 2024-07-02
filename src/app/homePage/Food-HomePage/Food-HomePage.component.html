@@ -1,0 +1,14 @@
+<div class="container home-food">
+  <app-Food-Homepage-Title></app-Food-Homepage-Title>
+  <div class="row">
+    <div class="col">
+      <div class="slide-3 no-arrow">
+        <owl-carousel-o [options]="customOptions"  class="ng-star-inserted row food-home">
+          <ng-template carouselSlide *ngFor="let item of foods ">
+            <app-Food-Homepage-Items [src]="item.src" [offer]="item.offer" [priceOld]="item.priceOld" [priceNew]="item.priceNew" [name]="item.name" [star]="item.star" [time]="item.time" [description]="item.description"></app-Food-Homepage-Items>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<a href="">
+  <div class="category-box">
+    <div class="side-effect"></div>
+    <div>
+        <img src={{src}} alt={{name}} class="img-fluid blur-up lazyload bg-img">
+        <div class="overlay"></div>
+    </div>
+    <div class="top-bar">
+      <span *ngIf="offer" class="offer ng-star-inserted">offer</span>
+      <h5>
+        <del *ngIf="priceOld">${{priceOld | number}}</del>
+        ${{priceNew | number}}
+      </h5>
+    </div>
+    <div class="like-cls">
+      <i class="pi pi-heart-fill" style="color: #e1002c">
+        <span class="effect"></span>
+      </i>
+    </div>
+    <div class="bottom-bar">
+      <div class="top">
+        <h5>{{name}}</h5>
+        <div class="rating">
+          <ngb-rating [rate]="star" />
+        </div>
+        <h6 class="ng-star-inserted">{{time}}</h6>
+      </div>
+      <p>{{description}}</p>
+    </div>
+  </div>
+</a>
