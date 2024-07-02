@@ -46,6 +46,9 @@ import { HotelVideoHomepageComponent } from './homePage/hotel-video-homepage/hot
 import { FoodHomePageComponent } from './homePage/Food-HomePage/Food-HomePage.component';
 import { FoodHomepageTitleComponent } from './homePage/Food-HomePage/Food-Homepage-Title/Food-Homepage-Title.component';
 import { FoodHomepageItemsComponent } from './homePage/Food-HomePage/Food-Homepage-Items/Food-Homepage-Items.component';
+import { GallaryHomepageComponent } from './homePage/Gallary-homepage/Gallary-homepage.component';
+import { GallaryHomepageTitleComponent } from './homePage/Gallary-homepage/Gallary-homepage-title/Gallary-homepage-title.component';
+import { GallaryHomepageItemsComponent } from './homePage/Gallary-homepage/Gallary-homepage-items/Gallary-homepage-items.component';
 
 
 @NgModule({
@@ -101,7 +104,10 @@ import { FoodHomepageItemsComponent } from './homePage/Food-HomePage/Food-Homepa
     HotelVideoHomepageComponent,
     FoodHomePageComponent,
     FoodHomepageTitleComponent,
-    FoodHomepageItemsComponent
+    FoodHomepageItemsComponent,
+    GallaryHomepageComponent,
+    GallaryHomepageTitleComponent,
+    GallaryHomepageItemsComponent
   ],
   providers: [CommonModule, DatePipe],
 })

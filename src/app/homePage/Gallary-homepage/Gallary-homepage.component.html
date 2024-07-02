@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <app-Gallary-homepage-title></app-Gallary-homepage-title>
+  <div class="row">
+    <div class="col">
+        <div class="slide-4 no-arrow">
+          <owl-carousel-o [options]="customOptions"  class="ng-star-inserted row gallary-home">
+            <ng-template carouselSlide *ngFor="let item of gallarys ">
+              <app-Gallary-homepage-items [src]="item.src" [name]="item.name" ></app-Gallary-homepage-items>
+            </ng-template>
+          </owl-carousel-o>
+        </div>
+    </div>
+  </div>
+</div>
