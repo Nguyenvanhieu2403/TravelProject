@@ -10,17 +10,19 @@ import { BaseModule } from './base.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MenuComponent } from './navbar/menu/menu.component';
 import { GoToTopComponent } from './common/GoToTop/GoToTop.component';
+import { FooterComponent } from './Footer/Footer.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
     NavbarComponent,
     MenuComponent,
-    GoToTopComponent
+    GoToTopComponent,
+    FooterComponent
    ],
   imports: [
     BrowserModule,
