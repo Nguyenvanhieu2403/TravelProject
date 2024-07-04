@@ -15,6 +15,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { TabViewModule } from 'primeng/tabview';
 import { ToolbarModule } from 'primeng/toolbar';
 import { RatingModule } from 'primeng/rating';
+import { PasswordModule } from 'primeng/password';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -52,6 +53,8 @@ import { GallaryHomepageItemsComponent } from './homePage/Gallary-homepage/Galla
 import { SubcribeHomepageComponent } from './homePage/subcribe-homepage/subcribe-homepage.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { LoginAnimationComponent } from './authentication/login/login-animation/login-animation.component';
+import { RegisterComponent } from './authentication/register/register.component';
+import { RegisterAnimationComponent } from './authentication/register/register-animation/register-animation.component';
 
 
 @NgModule({
@@ -79,7 +82,8 @@ import { LoginAnimationComponent } from './authentication/login/login-animation/
       }
     }),
     CarouselModule ,
-    RatingModule
+    RatingModule,
+    PasswordModule
   ],
   declarations: [
     HomePageComponent,
@@ -113,7 +117,9 @@ import { LoginAnimationComponent } from './authentication/login/login-animation/
     GallaryHomepageItemsComponent,
     SubcribeHomepageComponent,
     LoginComponent,
-    LoginAnimationComponent
+    LoginAnimationComponent,
+    RegisterComponent,
+    RegisterAnimationComponent
   ],
   providers: [CommonModule, DatePipe],
 })
