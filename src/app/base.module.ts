@@ -50,6 +50,8 @@ import { GallaryHomepageComponent } from './homePage/Gallary-homepage/Gallary-ho
 import { GallaryHomepageTitleComponent } from './homePage/Gallary-homepage/Gallary-homepage-title/Gallary-homepage-title.component';
 import { GallaryHomepageItemsComponent } from './homePage/Gallary-homepage/Gallary-homepage-items/Gallary-homepage-items.component';
 import { SubcribeHomepageComponent } from './homePage/subcribe-homepage/subcribe-homepage.component';
+import { LoginComponent } from './authentication/login/login.component';
+import { LoginAnimationComponent } from './authentication/login/login-animation/login-animation.component';
 
 
 @NgModule({
@@ -109,7 +111,9 @@ import { SubcribeHomepageComponent } from './homePage/subcribe-homepage/subcribe
     GallaryHomepageComponent,
     GallaryHomepageTitleComponent,
     GallaryHomepageItemsComponent,
-    SubcribeHomepageComponent
+    SubcribeHomepageComponent,
+    LoginComponent,
+    LoginAnimationComponent
   ],
   providers: [CommonModule, DatePipe],
 })
