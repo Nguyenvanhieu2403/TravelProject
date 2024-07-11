@@ -1,0 +1,40 @@
+<section class="breadcrumb-section pt-0 bg-size banner-hotels">
+  <img src="" alt="" class="bg-img img-fluid blur-up lazyload">
+  <div class="breadcrumb-content">
+    <div>
+      <h2>hotels</h2>
+      <nav class="theme-breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            hotels
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="title-breadcrumb">Rica</div>
+  </div>
+</section>
+<section class="bg-white pt-0 search-panel search-bar-hotel" id="searchBar">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <app-SearchHotels></app-SearchHotels>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="xs-section bg-inner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <app-FilterHotels (rangeChange)="onRangeChange($event)" (filtersChange)="onFiltersChange($event)" [PriceStart]="PriceMin" [PriceEnd]="PriceMax"></app-FilterHotels>
+      </div>
+      <div class="col-lg-12 ratio3_2">
+        <app-FilterHotelsData [PriceStart]="PriceStart" [PriceEnd]="PriceEnd" [filters]="filters" (PriceChange)="onPriceChange($event)"></app-FilterHotelsData>
+      </div>
+    </div>
+  </div>
+</section>

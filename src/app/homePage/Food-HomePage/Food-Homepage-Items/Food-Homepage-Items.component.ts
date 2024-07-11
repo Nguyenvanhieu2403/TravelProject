@@ -21,7 +21,7 @@ export class FoodHomepageItemsComponent implements OnInit {
   constructor(config: NgbRatingConfig) {
     config.max = 5;
 		config.readonly = true;
-   }
+  }
 
   ngOnInit() {
   }

@@ -1,0 +1,68 @@
+  <ul class="product-filter-tags">
+    <li class="me-1">
+      <a href="javascript:void(0)" class="filter_tag" *ngFor="let filter of getAllFilters()">
+        <span>{{ filter.value }}</span>
+        <button type="button" aria-label="Close" class="btn-close" (click)="removeFilter(filter.type, filter.value)"></button>
+      </a>
+      <a href="javascript:void(0)" class="filter_tag">Price: ${{PriceStart}} - ${{PriceEnd}}</a>
+    </li>
+  </ul>
+  <div class="product-wrapper-grid special-section grid-box">
+    <div class="row content grid">
+      <div class="popular grid-item wow fadeInUp col-sm-6 col-xl-3 col-lg-4 filter_data" *ngFor="let item of filteredHotelItems">
+        <div class="special-box">
+          <div class="special-img">
+            <a class="bg-size" [ngStyle]="{'background-image': 'url(' + item.image + ')'}">
+              <img [src]="item.image" [alt]="item.name" class="img-fluid blur-up lazyload bg-img img-hotels">
+            </a>
+            <div class="top-icon">
+              <a href="">
+                <i class="pi pi-heart"></i>
+              </a>
+            </div>
+          </div>
+          <div class="special-content">
+            <a href="">
+              <h5>
+                {{item.name}}
+                <span>
+                  <i class="pi pi-map-marker"></i>  {{item.location}}
+                </span>
+              </h5>
+            </a>
+            <p>
+              {{item.description}}
+            </p>
+            <div class="bottom-section">
+              <div class="rating">
+                <ngb-rating [rate]="item.rating"></ngb-rating>
+                <span>{{item.review}} review</span>
+              </div>
+              <div class="price">
+                <del> ${{item.priceOld}}</del>
+                <span> ${{item.priceNew}}</span>
+                <div class="facility-detail">
+                  <span *ngFor="let itemFacility of item.facilities.name">{{itemFacility}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="label-offer" *ngIf="item.offer">
+            {{item.offer}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class=" flex justify-content-center">
+    <p-paginator
+        (onPageChange)="onPageChange($event)"
+        [first]="first"
+        [rows]="rows"
+        [totalRecords]="totalRecords"
+        [showCurrentPageReport]="true"
+        [showPageLinks]="false"
+        [showJumpToPageDropdown]="false"
+        currentPageReportTemplate="Showing {first} to {last} of {totalRecords}" />
+  </div>

@@ -16,6 +16,8 @@ import { TabViewModule } from 'primeng/tabview';
 import { ToolbarModule } from 'primeng/toolbar';
 import { RatingModule } from 'primeng/rating';
 import { PasswordModule } from 'primeng/password';
+import { SliderModule } from 'primeng/slider';
+import { CheckboxModule } from 'primeng/checkbox';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -55,6 +57,13 @@ import { LoginComponent } from './authentication/login/login.component';
 import { LoginAnimationComponent } from './authentication/login/login-animation/login-animation.component';
 import { RegisterComponent } from './authentication/register/register.component';
 import { RegisterAnimationComponent } from './authentication/register/register-animation/register-animation.component';
+import { HotelsComponent } from './hotels/hotels.component';
+import { SearchHotelsComponent } from './hotels/SearchHotels/SearchHotels.component';
+import { FilterHotelsComponent } from './hotels/FilterHotels/FilterHotels.component';
+import { SearchFilterHotelComponent } from './hotels/FilterHotels/SearchFilterHotel/SearchFilterHotel.component';
+import { NgxSliderModule } from 'ngx-slider-v2';
+import { FilterHotelsDataComponent } from './hotels/FilterHotelsData/FilterHotelsData.component';
+import { PaginatorModule } from 'primeng/paginator';
 
 
 @NgModule({
@@ -83,7 +92,11 @@ import { RegisterAnimationComponent } from './authentication/register/register-a
     }),
     CarouselModule ,
     RatingModule,
-    PasswordModule
+    PasswordModule,
+    SliderModule,
+    NgxSliderModule,
+    CheckboxModule,
+    PaginatorModule
   ],
   declarations: [
     HomePageComponent,
@@ -119,7 +132,12 @@ import { RegisterAnimationComponent } from './authentication/register/register-a
     LoginComponent,
     LoginAnimationComponent,
     RegisterComponent,
-    RegisterAnimationComponent
+    RegisterAnimationComponent,
+    HotelsComponent,
+    SearchHotelsComponent,
+    FilterHotelsComponent,
+    SearchFilterHotelComponent,
+    FilterHotelsDataComponent
   ],
   providers: [CommonModule, DatePipe],
 })

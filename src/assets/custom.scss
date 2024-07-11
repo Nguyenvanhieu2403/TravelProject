@@ -19,6 +19,53 @@
     color: #fc3;
 }
 
+.star-categogy .rating span {
+    font-size: 18px;
+    margin: 0 2px;
+    margin-top: -8px;
+    color: #fc3;
+}
+
+.range-slider .ngx-slider .ngx-slider-pointer {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: -4px;
+    width: 8px;
+    height: 12px;
+    background: rgba(239, 63, 62, 1);
+    cursor: pointer;
+}
+
+.range-slider .ngx-slider .ngx-slider-pointer:focus-visible{
+    outline: none;
+}
+
+.range-slider .ngx-slider .ngx-slider-tick.ngx-slider-selected {
+    background: rgba(239, 63, 62,1);
+}
+
+.range-slider .ngx-slider .ngx-slider-selection {
+    background: rgba(239, 63, 62,1);
+}
+
+.range-slider .ngx-slider .ngx-slider-pointer:after {
+    display: none;
+}
+
+.range-slider .ngx-slider .ngx-slider-bubble.ngx-slider-model-high {
+    background-color: rgba(239, 63, 62, 1);
+    color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .rating span {
+    font-size: 18px;
+    margin: 0 2px;
+    color: #fc3;
+}
+
 @media (min-width: 360px) {
     .flight-home .owl-carousel .owl-stage-outer 
     .ng-star-inserted div .owl-stage .owl-item {

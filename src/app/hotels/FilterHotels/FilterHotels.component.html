@@ -1,0 +1,27 @@
+<div class="filter-panel">
+  <div class="left-filter" >
+    <div class="respon-filter-btn" (click)="showOption()">
+      <h6>
+        filter 
+        <i class="pi pi-angle-down"></i>
+      </h6>
+      <span class="according-menu"></span>
+    </div>
+    <div class="filters respon-filter-content filter-button-group" [class.show]="showOptions">
+      <ul>
+        <li *ngFor="let filter of filters" 
+            [class.active]="filter === activeFilter" 
+            (click)="setActiveFilter(filter)">
+          {{ filter }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="right-panel ng-star-inserted">  
+    <a class="filter_button filter-bottom-title ng-star-inserted" (click)="showFilter()">
+      <img src="../../../assets/img/hotels/adjust.png" alt="" class="img-fluid blur-up lazyload">
+      <h5>latest filter</h5>
+    </a>
+    <app-SearchFilterHotel *ngIf="showFilters" [isOpen]="isFilterOpen" (close)="showFilter()" (rangeChange)="onRangeChange($event)" (filtersChange)="onFiltersChange($event)" [PriceMax]="PriceEnd" [PriceMin]="PriceStart"></app-SearchFilterHotel>
+  </div>
+</div>

@@ -1,0 +1,330 @@
+ol, ul {
+    padding-left: 2rem;
+}
+
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .03em;
+}
+
+
+
+.special-section .special-box .special-content h5, .special-section .special-box .special-content .h5 {
+    color: #000;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    margin-top: -7px;
+    white-space: nowrap;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+}
+
+.special-section.grid-box .special-box .special-content h5, .special-section.grid-box .special-box .special-content .h5 {
+    font-size: calc(14px + .00375*(100vw - 320px));
+    text-transform: capitalize;
+    margin-bottom: 0;
+    align-items: center;
+    margin-top: -4px;
+    display: flex;
+    /* overflow: hidden; */
+    max-width: 280px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.me-1 {
+    margin-right: .25rem !important;
+}
+
+.product-filter-tags li {
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+ul.product-filter-tags li {
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+a {
+    transition: .5s ease;
+    letter-spacing: .03em;
+    text-decoration: none;
+}
+
+.product-filter-tags li .filter_tag {
+    color: #777;
+    border: 1px solid #777777;
+    padding: 4px 10px 4px 12px;
+    text-transform: capitalize;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
+.product-filter-tags li .filter_tag .btn-close {
+    font-size: calc(8px + .00125*(100vw - 320px));
+    margin-left: 5px;
+}
+
+/*  */
+
+.special-section.grid-box {
+    margin-top: 30px;
+}
+
+.row div[class*=col-], .row .col {
+    position: relative;
+}
+
+.special-section .special-box {
+    box-shadow: 5px 8.66px 30px #0000000d;
+    transition: all .5s ease;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 9px #e4e4e4b3;
+}
+
+.special-section.grid-box .special-box {
+    position: relative;
+    background-color: #fff;
+}
+
+.special-section.grid-box .special-box {
+    position: relative;
+    background-color: #fff;
+}
+
+a {
+    transition: .5s ease;
+    letter-spacing: .03em;
+    text-decoration: none;
+}
+
+.bg-size {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.special-section .special-box .special-img .bg-size {
+    transition: all .5s ease;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    background-image: url(../../../assets/img/hotels/Items/1.jpg)
+}
+
+.blur-up {
+    filter: blur(5px);
+    transition: filter .4s;
+}
+
+.blur-up.lazyload {
+    filter: blur(0);
+}
+
+.img-hotels {
+    display: none;
+}
+
+.bg-size:before {
+    padding-top: 66.66%;
+    content: "";
+    display: block;
+}
+
+.special-section .special-box .special-img .top-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.special-section .special-box .special-img .top-icon i {
+    color: #fff;
+    font-size: calc(14px + .00125*(100vw - 320px));
+    padding: 8px;
+    background-color: #0009;
+    border-radius: 100%;
+}
+
+.special-section .special-box .special-content {
+    padding: 40px;
+}
+
+.special-section.grid-box .special-box .special-content {
+    padding: 20px 25px 25px;
+    position: relative;
+}
+
+h5, .h5 {
+    font-size: calc(16px + .0025*(100vw - 320px));
+    font-weight: 400;
+    letter-spacing: .03em;
+    line-height: 1.2;
+}
+
+.special-section.grid-box .special-box .special-content h5 span, .special-section.grid-box .special-box .special-content .h5 span {
+    color: #9a9a9a;
+    font-size: 14px;
+    margin-left: 8px;
+    font-weight: 500;
+    vertical-align: 3px;
+}
+
+.special-section.grid-box .special-box .special-content h5 span i, .special-section.grid-box .special-box .special-content .h5 span i {
+    color: #a7a7a7;
+    margin-right: 3px;
+    font-size: 10px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #bcbcbc;
+    letter-spacing: .03em;
+}
+
+.special-section .special-box .special-content p {
+    font-size: 14px;
+    color: #999;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.special-section.grid-box .special-box .special-content p {
+    margin-bottom: 10px;
+    color: #9a9a9a;
+    font-weight: 500;
+    letter-spacing: .05em;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .rating>span {
+    color: #000000a6;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 18px;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .price {
+    display: block;
+    align-items: center;
+    margin-top: 13px;
+    margin-bottom: -6px;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .price {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    margin-bottom: -6px;
+}
+
+.special-section.grid-box .col-xl-3 .special-box .special-content .bottom-section .price, .xs-section .col-lg-9 .special-section.grid-box .special-box .special-content .bottom-section .price {
+    display: block;
+    align-items: center;
+    margin-top: 13px;
+    margin-bottom: -6px;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .price del {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .price span {
+    color: #333;
+    font-size: calc(16px + .0025*(100vw - 320px));
+    font-weight: 800;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .price .facility-detail {
+    margin-left: 7px;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .price span {
+    color: #333;
+    font-size: calc(16px + .0025*(100vw - 320px));
+    font-weight: 800;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .price .facility-detail span {
+    color: #00000080;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding: 2px 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+.special-section.grid-box .special-box .label-offer {
+    position: absolute;
+    background-color: rgba(239, 63, 62, 1);
+    color: #fff;
+    font-size: calc(12px + .00125*(100vw - 320px));
+    text-transform: capitalize;
+    top: 10px;
+    left: -10px;
+    padding: 2px 10px;
+    font-weight: 800;
+}
+
+.special-section.grid-box .special-box .label-offer:after {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-top: 15px solid #b8100f;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}
+
+.special-box {
+    min-height: 494px;
+}
+
+.special-section .special-box:hover {
+    box-shadow: 5px 8.66px 30px #0000001a;
+    transition: all .5s ease;
+}
+
+.special-section .special-box:hover .special-img .bg-size {
+    transform: scale(1.03);
+    transition: all .5s ease;
+}
