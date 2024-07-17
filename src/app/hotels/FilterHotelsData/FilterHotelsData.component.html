@@ -12,7 +12,7 @@
       <div class="popular grid-item wow fadeInUp col-sm-6 col-xl-3 col-lg-4 filter_data" *ngFor="let item of filteredHotelItems">
         <div class="special-box">
           <div class="special-img">
-            <a class="bg-size" [ngStyle]="{'background-image': 'url(' + item.image + ')'}">
+            <a href="/HotelDetail" class="bg-size" [ngStyle]="{'background-image': 'url(' + item.image + ')'}">
               <img [src]="item.image" [alt]="item.name" class="img-fluid blur-up lazyload bg-img img-hotels">
             </a>
             <div class="top-icon">

@@ -18,7 +18,12 @@ import { RatingModule } from 'primeng/rating';
 import { PasswordModule } from 'primeng/password';
 import { SliderModule } from 'primeng/slider';
 import { CheckboxModule } from 'primeng/checkbox';
-
+import { LightboxModule } from 'ngx-lightbox';
+import { NgxSliderModule } from 'ngx-slider-v2';
+import { ImageModule } from 'primeng/image';
+import { PaginatorModule } from 'primeng/paginator';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { LightgalleryModule } from 'lightgallery/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HttpLoaderFactory } from './app.module';
@@ -30,7 +35,6 @@ import { SearchFlightComponent } from './homePage/slide/searchFlight/searchFligh
 import { SearchCarComponent } from './homePage/slide/searchCar/searchCar.component';
 import { SearchFoodComponent } from './homePage/slide/searchFood/searchFood.component';
 import { CategoryComponent } from './homePage/category/category.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CategoryItemComponent } from './homePage/category/CategoryItem/CategoryItem.component';
 import { HotelComponent } from './homePage/hotel/hotel.component';
 import { HotelTitleComponent } from './homePage/hotel/hotel-title/hotel-title.component';
@@ -61,9 +65,9 @@ import { HotelsComponent } from './hotels/hotels.component';
 import { SearchHotelsComponent } from './hotels/SearchHotels/SearchHotels.component';
 import { FilterHotelsComponent } from './hotels/FilterHotels/FilterHotels.component';
 import { SearchFilterHotelComponent } from './hotels/FilterHotels/SearchFilterHotel/SearchFilterHotel.component';
-import { NgxSliderModule } from 'ngx-slider-v2';
 import { FilterHotelsDataComponent } from './hotels/FilterHotelsData/FilterHotelsData.component';
-import { PaginatorModule } from 'primeng/paginator';
+import { HotelDetailComponent } from './hotel-detail/hotel-detail.component';
+import { HotelDetailTitleComponent } from './hotel-detail/hotel-detail-title/hotel-detail-title.component';
 
 
 @NgModule({
@@ -96,7 +100,10 @@ import { PaginatorModule } from 'primeng/paginator';
     SliderModule,
     NgxSliderModule,
     CheckboxModule,
-    PaginatorModule
+    PaginatorModule,
+    ImageModule,
+    LightboxModule,
+    LightgalleryModule
   ],
   declarations: [
     HomePageComponent,
@@ -137,7 +144,9 @@ import { PaginatorModule } from 'primeng/paginator';
     SearchHotelsComponent,
     FilterHotelsComponent,
     SearchFilterHotelComponent,
-    FilterHotelsDataComponent
+    FilterHotelsDataComponent,
+    HotelDetailComponent,
+    HotelDetailTitleComponent
   ],
   providers: [CommonModule, DatePipe],
 })

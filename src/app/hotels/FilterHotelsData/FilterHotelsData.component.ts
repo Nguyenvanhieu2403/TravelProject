@@ -267,10 +267,7 @@ export class FilterHotelsDataComponent implements OnInit {
   updateFilteredItems() {
     const start = this.first;
     const end = this.first + this.rows;
-    console.log( start, end);
-    console.table(this.filterpaging);
     this.filteredHotelItems = this.filterpaging.slice(start, end);
-    console.table(this.filterpaging);
   }
 
   updateItems() {

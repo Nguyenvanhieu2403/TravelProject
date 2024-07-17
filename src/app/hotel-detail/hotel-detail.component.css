@@ -1,0 +1,119 @@
+.row div[class*=col-], .row .col {
+    position: relative;
+}
+
+.overlay-hover .bg-size {
+    position: relative;
+}
+
+.bg-size {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+a {
+    transition: .5s ease;
+    letter-spacing: .03em;
+    text-decoration: none;
+}
+
+.ratio2_3 .bg-size:before {
+    /* padding-top: 60%; */
+    content: "";
+    display: block;
+}
+
+.overlay-hover .bg-size:after {
+    transition: all .5s ease;
+    content: "";
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.blur-up {
+    filter: blur(5px);
+    transition: filter .4s;
+}
+
+.blur-up.lazyload {
+    filter: blur(0);
+}
+
+a:hover {
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+a:hover {
+    --bs-link-color-rgb: 10, 88, 202;
+}
+
+.bg-size {
+    height: 50%;
+}
+
+.hotel-detail__img-main {
+    height: 100%;
+}
+
+.overlay-hover .bg-size:hover:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0003;
+    transition: all .5s ease;
+}
+
+.small-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.bg-inner {
+    background-color: #f9f9f9;
+}
+
+.single-section, .single-section .image_section {
+    position: relative;
+}
+
+
+@media (max-width: 1367px) {
+    .small-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .small-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .small-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .small-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

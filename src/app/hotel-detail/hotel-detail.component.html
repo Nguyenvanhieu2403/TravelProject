@@ -1,0 +1,44 @@
+<section class="pt-0 ratio2_3 zoom-gallery overlay-hover">
+  <div class="container-fluid p-0"> 
+    <div class="row m-0 hotel-detail-img">
+      <div class="col-md-6 p-0">
+        <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
+          <a href="../../assets/img/hotel-detail/11.jpg" class="bg-size hotel-detail__img-main">
+              <img class="img-fluid blur-up lazyload bg-img" alt="img1" src="../../assets/img/hotel-detail/11.jpg" />
+          </a>
+        </lightgallery>
+        
+      </div>
+        <div class="col-md-3 col-6 p-0 ">
+          <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
+            <a href="../../assets/img/hotel-detail/10.jpg" style="background-image: url(../../assets/img/hotel-detail/10.jpg);" class="bg-size">
+              <!-- <img class="img-fluid blur-up lazyload bg-img" alt="img1" src="../../assets/img/hotel-detail/10.jpg" /> -->
+            </a>
+            <a href="../../assets/img/hotel-detail/12.jpg" style="background-image: url(../../assets/img/hotel-detail/12.jpg);" class="bg-size">
+              <!-- <img class="img-fluid blur-up lazyload bg-img" alt="img1" src="../../assets/img/hotel-detail/12.jpg" /> -->
+            </a>
+          </lightgallery>
+        </div>
+        <div class="col-md-3 col-6 p-0 ">
+          <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
+            <a href="../../assets/img/hotel-detail/9.jpg" style="background-image: url(../../assets/img/hotel-detail/9.jpg);" class="bg-size">
+              <!-- <img class="img-fluid blur-up lazyload bg-img" alt="img1" src="../../assets/img/hotel-detail/9.jpg" /> -->
+            </a>
+            <a href="../../assets/img/hotel-detail/4.jpg" style="background-image: url(../../assets/img/hotel-detail/4.jpg);" class="bg-size">
+              <!-- <img class="img-fluid blur-up lazyload bg-img" alt="img1" src="../../assets/img/hotel-detail/4.jpg" /> -->
+            </a>
+          </lightgallery>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="single-section small-section bg-inner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <app-hotel-detail-title></app-hotel-detail-title>
+      </div>
+    </div>
+  </div>
+</section>

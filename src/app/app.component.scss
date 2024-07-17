@@ -16,3 +16,26 @@ body {
 .container {
     max-width: 100%;
 }
+
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+}
+
+h2, .h2 {
+    font-size: calc(22px + .00875*(100vw - 320px));
+    font-weight: 700;
+    letter-spacing: .001em;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #bcbcbc;
+    letter-spacing: .03em;
+}
