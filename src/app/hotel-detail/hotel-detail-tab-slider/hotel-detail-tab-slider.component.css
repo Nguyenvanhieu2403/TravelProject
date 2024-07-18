@@ -1,0 +1,260 @@
+.about-title {
+    color: #000;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.slide-tab__items li {
+    list-style: none;
+    display: block;
+    text-transform: capitalize;
+    line-height: 1.9;
+}
+
+h6 img {
+    padding-right: 5px;
+}
+
+.menu-part.map iframe {
+    width: 100%;
+    height: 420px;
+    margin-bottom: -5px;
+}
+
+.rooms {
+    margin-top: 20px;
+    /* padding: 30px; */
+    background-color: #fff;
+    margin-bottom: 30px;
+    /* box-shadow: 0 2px 4px #dedede; */
+}
+
+.rooms {
+    margin-top: 0;
+}
+
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+.menu-part .rooms-box {
+    width: 100%;
+}
+
+.menu-part .rooms-box tbody tr {
+    display: block;
+}
+
+.menu-part .rooms-box td:first-child {
+    width: 25%;
+}
+
+.menu-part .rooms-box .room-title {
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.blur-up {
+    filter: blur(5px);
+    transition: filter .4s;
+}
+
+.blur-up.lazyload {
+    filter: blur(0);
+}
+
+.menu-part .rooms-box .room-detail {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-part .rooms-box .room-detail .row {
+    width: 100%;
+}
+
+.menu-part .rooms-box .room-detail h6 {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: .05em;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.menu-part .rooms-box .room-detail .facility-detail li {
+    display: block;
+    color: #000;
+    text-transform: capitalize;
+    line-height: 28px;
+}
+
+.menu-part .rooms-box .room-detail .facility-detail li img {
+    margin-right: 8px;
+    width: 20px;
+}
+
+.menu-part .rooms-box .room-detail .facility-detail li {
+    display: block;
+    color: #000;
+    text-transform: capitalize;
+    line-height: 28px;
+    letter-spacing: .06em;
+}
+
+.menu-part .rooms-box .room-detail .facility-detail li img {
+    margin-right: 8px;
+    width: 20px;
+}
+
+li {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .03em;
+}
+
+.menu-part .rooms-box .room-detail .facility-detail li {
+    display: block;
+    color: #000;
+    text-transform: capitalize;
+    line-height: 28px;
+    letter-spacing: .06em;
+}
+
+.menu-part .rooms-box .price-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-part .rooms-box .price-details h6 {
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #000000bd;
+}
+
+.menu-part .rooms-box .price-details h5 {
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: calc(18px + .00375*(100vw - 320px));
+}
+
+.menu-part .rooms-box .price-details span {
+    display: block;
+    color: #000000b8;
+}
+
+.btn.btn-rounded {
+    border-radius: 100px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.btn.btn-rounded.color1 {
+    background-color: rgba(239, 63, 62, 1);
+    box-shadow: 1px 11px 20px 0 rgba(239, 63, 62, .12);
+}
+
+.menu-part .rooms-box .price-details .btn {
+    /* padding: 6px 14px; */
+    font-size: 14px;
+    border-radius: 0;
+    margin-top: 7px;
+}
+
+.btn.btn-rounded.color1:hover {
+    background-color: #fff;
+    color: rgba(239, 63, 62, 1);
+    transition: all .5s ease;
+    border: 1px solid rgba(239, 63, 62, 1);
+    box-shadow: 1px 11px 20px 0 rgba(239, 63, 62, .22);
+}
+
+.menu-part .rooms-box tbody tr+tr {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #f9f9f9;
+}
+
+.menu-part .rooms-box td:nth-child(3) {
+    text-align: right;
+}
+
+.review {
+    margin-top: 20px;
+    /* padding: 30px; */
+    background-color: #fff;
+    margin-bottom: 30px;
+    /* box-shadow: 0 2px 4px #dedede; */
+    margin-top: 0;
+}
+
+.menu-part.review .review-box .rating>span {
+    font-size: calc(14px + .00125*(100vw - 320px));
+    margin-left: 10px;
+    font-weight: 600;
+    color: #000;
+}
+
+.menu-part.review .review-box h6, .single-section .description-section .description-details .menu-part.review .review-box .h6 {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #00000080;
+    margin-top: 4px;
+}
+
+.menu-part.review .review-box p {
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 0;
+    font-size: calc(14px + .00125*(100vw - 320px));
+}
+
+.menu-part.review .review-box+.review-box {
+    border-top: 1px solid #f9f9f9;
+    padding-top: 12px;
+    margin-top: 15px;
+}
+
+@media (max-width: 576px) {
+    .menu-part {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-part .rooms-box td:first-child {
+        width: 100%;
+        display: block;
+    }
+
+    .menu-part .rooms-box td:nth-child(2) {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .menu-part .rooms-box .room-detail {
+        padding: 10px 0;
+    }
+
+    .menu-part .rooms-box .price-details {
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        padding-top: 10px;
+        border-top: 1px solid #f9f9f9;
+    }
+}
+
+@media (max-width: 1199px) {
+    .menu-part .rooms-box .price-details .btn {
+        padding: 3px 9px !important;
+    }
+}

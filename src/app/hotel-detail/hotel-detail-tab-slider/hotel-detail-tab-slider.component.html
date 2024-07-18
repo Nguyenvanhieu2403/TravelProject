@@ -1,0 +1,129 @@
+<p-tabView  class="hotel-detail-tab-menu">
+  <p-tabPanel *ngFor="let tab of tabs" [header]="tab.title">
+    <div class="about menu-part tab-pane" *ngIf="tab.title === 'ABOUT'">
+      <span *ngFor="let about of tab.content">
+        <h6 class="ng-star-inserted about-title">{{about.title}}</h6>
+        <p class="ng-star-inserted">{{about.content}}</p>
+      </span>
+    </div>
+
+    <div class="facility menu-part tab-pane" *ngIf="tab.title === 'FACILITY'">
+      <div class="row">
+        <ng-container *ngFor="let facility of tab.content; let i = index">
+          <ng-container *ngIf="i < tab.content.length - 2">
+            <div class="col-xl-3 col-6 ng-star-inserted">
+              <h6 class="ng-star-inserted">
+                <img src="{{facility.src}}" alt="icon" class="img-fluid blur-up lazyload">
+                {{facility.name}}
+              </h6>
+              <ul class="ng-star-inserted slide-tab__items">
+                <li class="ng-star-inserted" *ngFor="let item of facility.item">
+                  <i class="pi pi-check" style="font-size: 8px; margin-right: 5px"></i>
+                  {{item.name}}
+                </li>
+              </ul>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="i === tab.content.length - 2">
+            <div class="col-xl-3 col-6 ng-star-inserted">
+              <ng-container *ngFor="let lastFacility of tab.content.slice(-2)">
+                <h6 class="ng-star-inserted">
+                  <img src="{{lastFacility.src}}" alt="icon" class="img-fluid blur-up lazyload">
+                  {{lastFacility.name}}
+                </h6>
+                <ul class="ng-star-inserted  slide-tab__items">
+                  <li class="ng-star-inserted" *ngFor="let item of lastFacility.item">
+                    <i class="pi pi-check" style="font-size: 8px; margin-right: 5px"></i>
+                    {{item.name}}
+                  </li>
+                </ul>
+              </ng-container>
+            </div>
+          </ng-container>
+        </ng-container>
+      </div>
+    </div>
+    <div class="location menu-part map tab-pane" *ngIf="tab.title === 'LOCATION'">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8168145559393!2d105.73938337471469!3d21.
+        040014487393055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135096b31fa7abb%3A0xff645782804911af!2zVHLGsOG7nW5nIMSR4bqhaSBo
+        4buNYyBDw7RuZyBuZ2jhu4cgxJDDtG5nIMOB!5e0!3m2!1svi!2s!4v1721239224955!5m2!1svi!2s" width="800" height="600" style="border:0;" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+
+    <div class="rooms menu-part map tab-pane" *ngIf="tab.title === 'ROOMS'">
+      <table class="rooms-box">
+        <tbody>
+          <tr class="ng-star-inserted" *ngFor="let room of tab.content">
+            <td>
+              <h6 class="room-title">{{room.name}}</h6>
+              <a href="">
+                <img [src]="room.src" alt="{{room.name}}" class="img-fluid blur-up lazyload">
+              </a>
+            </td>
+            <td>
+              <div class="room-detail">
+                <div class="row">
+                  <div class="col-6 p-0">
+                    <h6>Amenities</h6>
+                    <div class="facility-detail">
+                      <ul>
+                        <li class="ng-star-inserted" *ngFor="let ameniti of room.amenities">
+                          <img src="{{ameniti.icon}}" alt="" class="img-fluid blur-up lazyload">
+                          {{ameniti.name}}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6 p-0">
+                    <h6>Inclusion</h6>
+                    <div class="facility-detail">
+                      <ul>
+                        <li class="ng-star-inserted" *ngFor="let item of room.inclusion">
+                          <i class="pi pi-check" style="font-size: 8px; margin-right: 5px"></i>
+                          {{item.name}}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="price-details">
+                <div>
+                  <h6>
+                    <del>${{room.priceOld | number : '1.2-2'}}</del>
+                  </h6>
+                  <h5>${{room.priceNew | number : '1.2-2'}}</h5>
+                  <span>per night</span>
+                  <a href="" class="btn btn-rounded btn-sm color1">book now</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="review menu-part map tab-pane" *ngIf="tab.title === 'REVIEWS'">
+      <div class="review-box ng-star-inserted" *ngFor="let review of tab.content">
+        <div class="rating">
+          <ngb-rating [rate]="review.star"></ngb-rating>
+          <span class="review-title">{{review.title}}</span>
+        </div>
+        <h6>
+          {{review.owner}}, {{review.datetime}}
+        </h6>
+        <p>{{review.content}}</p>
+      </div>
+    </div>
+
+    <div class="menu-part policy tab-pane" *ngIf="tab.title === 'POLICIES'">
+      <p *ngFor="let policy of tab.content">
+        {{policy.content}}
+      </p>
+    </div>
+  </p-tabPanel>
+  </p-tabView>
