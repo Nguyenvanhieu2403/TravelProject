@@ -3,6 +3,7 @@ import { BeforeSlideDetail } from 'lightgallery/lg-events';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgShare from 'lightgallery/plugins/share';
 import lgHash from 'lightgallery/plugins/hash';
+import { FilterHotelDataServiceService } from '../service/transfer/FilterHotelData-service.service';
 
 @Component({
   selector: 'app-hotel-detail',
@@ -10,6 +11,12 @@ import lgHash from 'lightgallery/plugins/hash';
   styleUrls: ['./hotel-detail.component.css']
 })
 export class HotelDetailComponent implements OnInit {
+
+  hotel: any;
+  priceOld: any;
+  priceNew: any;
+  rating : number = 5;
+  title: string= "";
 
   items = [
     {
@@ -46,9 +53,14 @@ export class HotelDetailComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(private _filterService: FilterHotelDataServiceService) { }
 
   ngOnInit() {
+    this.hotel = this._filterService.getSharedData();
+    this.priceOld = this.hotel.priceOld;
+    this.priceNew = this.hotel.priceNew;
+    this.title = this.hotel.name;
+    this.rating = this.hotel.rating;
   }
 
   settings = {

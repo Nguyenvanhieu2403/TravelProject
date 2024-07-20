@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-hotel-detail-tab-slider',
@@ -15,8 +16,30 @@ export class HotelDetailTabSliderComponent implements OnInit {
   rooms: any;
   reviews: any;
   policies: any;
+  hotels: any;
+  hotel: any;
 
   templateData: string= "<p>absfhshfb</p>";
+
+  customOptions: OwlOptions = {
+    loop: true,
+    autoplay: false,
+    center: true,
+    dots: false,
+    autoHeight: true,
+    autoWidth: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 1,
+      }
+    }
+  }
 
   constructor(config: NgbRatingConfig) { 
     config.max = 5;
@@ -303,6 +326,135 @@ export class HotelDetailTabSliderComponent implements OnInit {
       },
 
     ]
+
+    this.hotels = [
+      {
+        id: 1,
+        name: "the venetian",
+        location: " Newyork",
+        description: "The Venetian Hotel is a lavish resort in Las Vegas, featuring opulent Italian-inspired architecture, complete with indoor canals and gondola rides",
+        review: 26412,
+        rating: 4,
+        priceOld:  130,
+        priceNew:  124,
+        image: "../../../assets/img/hotels/Items/1.jpg",
+        facilities: {
+          name:["Pet Allowed", "Restaurant"],
+        },
+        offer: "Recommended",
+        language: "English"
+      },
+      {
+        id: 2,
+        name: "The Ritz-Carlton",
+        location: "Paris",
+        description: "Nestled in the heart of Paris, this iconic hotel offers exquisite luxury and impeccable service, providing an elegant retreat near the Louvre",
+        review: 25000,
+        rating: 2,
+        priceOld:  120,
+        priceNew:  117,
+        image: "../../../assets/img/hotels/Items/2.jpg",
+        facilities: {
+          name:["Swimming Pool", "fitness Center"],
+        },
+        offer: "Hot Deal",
+        language: "Suomi"
+      },
+      {
+        id: 3,
+        name: "Mandarin Oriental",
+        location: " Tokyo",
+        description: "Set in the bustling metropolis of Tokyo, this high-rise hotel boasts panoramic city views and a harmonious blend of Japanese aesthetics and contemporary luxury",
+        review: 26412,
+        rating: 5,
+        priceOld:  100,
+        priceNew:  985,
+        image: "../../../assets/img/hotels/Items/3.jpg",
+        facilities: {
+          name:["Wifi", "Restaurant"],
+        },
+        offer: "Certified",
+        language: "Espanol"
+      },
+      {
+        id: 4,
+        name: "Four Seasons Safari",
+        location: "Tanzania",
+        description: "Surrounded by the vast plains of the Serengeti, this safari lodge offers a unique blend of wildlife adventure and five-star comfort, allowing guests to experience the wonders of Africa",
+        review: 26412,
+        rating: 3,
+        priceOld:  150,
+        priceNew:  142,
+        image: "../../../assets/img/hotels/Items/4.jpg",
+        facilities: {
+          name:["Parking", "Restaurant"],
+        },
+        language: "French"
+      },
+      {
+        id: 5,
+        name: "the venetian 111",
+        location: " Newyork",
+        description: "The Venetian Hotel is a lavish resort in Las Vegas, featuring opulent Italian-inspired architecture, complete with indoor canals and gondola rides",
+        review: 26412,
+        rating: 4,
+        priceOld:  130,
+        priceNew:  124,
+        image: "../../../assets/img/hotels/Items/1.jpg",
+        facilities: {
+          name:["Pet Allowed", "Restaurant"],
+        },
+        offer: "Recommended",
+        language: "English"
+      },
+      {
+        id: 6,
+        name: "The Ritz-Carlton 111",
+        location: "Paris",
+        description: "Nestled in the heart of Paris, this iconic hotel offers exquisite luxury and impeccable service, providing an elegant retreat near the Louvre",
+        review: 25000,
+        rating: 2,
+        priceOld:  120,
+        priceNew:  117,
+        image: "../../../assets/img/hotels/Items/2.jpg",
+        facilities: {
+          name:["Swimming Pool", "fitness Center"],
+        },
+        offer: "Hot Deal",
+        language: "Suomi"
+      },
+      {
+        id: 7,
+        name: "Mandarin Oriental 111",
+        location: " Tokyo",
+        description: "Set in the bustling metropolis of Tokyo, this high-rise hotel boasts panoramic city views and a harmonious blend of Japanese aesthetics and contemporary luxury",
+        review: 26412,
+        rating: 5,
+        priceOld:  100,
+        priceNew:  985,
+        image: "../../../assets/img/hotels/Items/3.jpg",
+        facilities: {
+          name:["Wifi", "Restaurant"],
+        },
+        offer: "Certified",
+        language: "Espanol"
+      },
+      {
+        id: 8,
+        name: "Four Seasons Safari 111",
+        location: "Tanzania",
+        description: "Surrounded by the vast plains of the Serengeti, this safari lodge offers a unique blend of wildlife adventure and five-star comfort, allowing guests to experience the wonders of Africa",
+        review: 26412,
+        rating: 3,
+        priceOld:  150,
+        priceNew:  142,
+        image: "../../../assets/img/hotels/Items/4.jpg",
+        facilities: {
+          name:["Parking", "Restaurant"],
+        },
+        language: "French"
+      }
+    ];
   }
 
   ngOnInit() {

@@ -1,7 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 import { HotelsService } from '../hotels.service';
-import { PaginatorModule } from 'primeng/paginator';
+import { FilterHotelDataServiceService } from '../../service/transfer/FilterHotelData-service.service';
+import { Router } from '@angular/router';
 
 interface Filter {
   type: string;
@@ -192,7 +193,12 @@ export class FilterHotelsDataComponent implements OnInit {
   rows: any = 4;
   totalRecords: any = this.HotelItems.length;
 
-  constructor(config: NgbRatingConfig, private hotelsService: HotelsService) {
+  constructor(
+    config: NgbRatingConfig, 
+    private hotelsService: HotelsService,
+    private _filterService: FilterHotelDataServiceService,
+    private router: Router,
+  ) {
     config.max = 5;
 		config.readonly = true;
   }
@@ -274,6 +280,12 @@ export class FilterHotelsDataComponent implements OnInit {
     const start = this.first;
     const end = this.first + this.rows;
     this.filteredHotelItems = this.HotelItems.slice(start, end);
+  }
+
+  openHotelDetail(hotel: any) {
+    this._filterService.resetSharedData();
+    this._filterService.setSharedData(hotel);
+    this.router.navigate(['HotelDetail']);
   }
 
 }

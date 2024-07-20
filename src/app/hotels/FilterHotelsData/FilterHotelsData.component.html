@@ -9,20 +9,20 @@
   </ul>
   <div class="product-wrapper-grid special-section grid-box">
     <div class="row content grid">
-      <div class="popular grid-item wow fadeInUp col-sm-6 col-xl-3 col-lg-4 filter_data" *ngFor="let item of filteredHotelItems">
+      <div style="cursor: pointer;" class="popular grid-item wow fadeInUp col-sm-6 col-xl-3 col-lg-4 filter_data" *ngFor="let item of filteredHotelItems" (click)="openHotelDetail(item)">
         <div class="special-box">
           <div class="special-img">
-            <a href="/HotelDetail" class="bg-size" [ngStyle]="{'background-image': 'url(' + item.image + ')'}">
+            <a  class="bg-size" [ngStyle]="{'background-image': 'url(' + item.image + ')'}">
               <img [src]="item.image" [alt]="item.name" class="img-fluid blur-up lazyload bg-img img-hotels">
             </a>
             <div class="top-icon">
-              <a href="">
+              <a>
                 <i class="pi pi-heart"></i>
               </a>
             </div>
           </div>
           <div class="special-content">
-            <a href="">
+            <a>
               <h5>
                 {{item.name}}
                 <span>

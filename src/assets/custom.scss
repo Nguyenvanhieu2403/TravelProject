@@ -104,6 +104,13 @@
     box-shadow: 0 2px 4px #dedede;
 }
 
+.book-btn-section .datepicker span{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
 @media (min-width: 360px) {
     .flight-home .owl-carousel .owl-stage-outer 
     .ng-star-inserted div .owl-stage .owl-item {

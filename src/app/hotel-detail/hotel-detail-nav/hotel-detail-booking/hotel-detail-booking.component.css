@@ -1,0 +1,279 @@
+.overlay-map {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.blur-up {
+    filter: blur(5px);
+    transition: filter .4s;
+}
+
+.blur-up.lazyload {
+    filter: blur(0);
+}
+
+.overlay-map img {
+    height: 100px;
+    width: 100%;
+}
+
+.overlay-map iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .0001;
+    z-index: 1;
+}
+
+.overlay-map h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    color: #000;
+    text-transform: capitalize;
+    font-size: calc(12px + .00125*(100vw - 320px));
+    z-index: 0;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.price-part {
+    display: flex;
+}
+
+.price-part .left-part a {
+    color: #000;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.price-part .left-part span {
+    display: block;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.price-part .left-part span i {
+    font-size: 10px;
+    margin-right: 5px;
+    color: green;
+}
+
+.price-part .right-part {
+    margin-left: auto;
+    text-align: right;
+}
+
+.price-part .right-part span {
+    color: #0006;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+p {
+    color: #0000008c;
+    margin-bottom: 10px;
+    line-height: 1.7;
+    font-size: calc(14px + .00125*(100vw - 320px));
+}
+
+.price-part .right-part p {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #000;
+}
+
+.price-part .right-part h6, .single-section .single-sidebar .price-part .right-part .h6 {
+    margin-bottom: 0;
+    font-size: calc(16px + .0025*(100vw - 320px));
+    font-weight: 600;
+    color: #000;
+}
+
+.book-btn-section {
+    border-top: 1px solid #f9f9f9;
+    margin-top: 10px;
+    padding-top: 15px;
+    text-align: right;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    appearance: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #dee2e6;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control {
+    height: auto;
+}
+
+.book-btn-section .rooms-section {
+    position: relative;
+    margin-top: 10px;
+}
+
+.selector-box {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    z-index: 3;
+    border: 1px solid #dedede;
+    box-shadow: 0 2px 4px #0000001a;
+    top: auto;
+    display: none;
+}
+
+.book-btn-section .rooms-section .selector-box {
+    text-align: left;
+    padding: 10px;
+}
+
+label {
+    letter-spacing: .03em;
+}
+
+.book-btn-section .rooms-section .selector-box .room-cls .title_room {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.book-btn-section .rooms-section .selector-box .room-cls .qty-box {
+    display: flex;
+    align-items: center;
+}
+
+.book-btn-section .rooms-section .selector-box .room-cls .qty-box label {
+    text-transform: capitalize;
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.book-btn-section .rooms-section .selector-box .room-cls .qty-box .input-group {
+    width: 140px;
+    margin-left: auto;
+}
+
+.btn {
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 0;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.book-btn-section .rooms-section .selector-box .room-cls .qty-box .input-group .btn {
+    background-color: transparent;
+}
+
+.input-group>.form-control, .input-group>.form-select, .input-group>.form-floating {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.book-btn-section .rooms-section .selector-box .room-cls .qty-box .input-group .form-control {
+    padding: 0;
+    text-align: center;
+    border: none;
+}
+
+.input-group .btn {
+    position: relative;
+    z-index: 2;
+}
+
+.book-btn-section .rooms-section .selector-box .room-cls .qty-box .input-group .btn {
+    background-color: transparent;
+}
+
+.book-btn-section .rooms-section .selector-box .bottom-part {
+    border-top: 1px solid #f9f9f9;
+    margin-top: 10px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.book-btn-section .rooms-section .selector-box .bottom-part .add-room {
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.book-btn-section .rooms-section .selector-box .bottom-part .btn {
+    margin-left: auto;
+}
+
+.book-btn-section .selector select {
+    cursor: pointer;
+    width: 100%;
+    height: 38px;
+    background-color: transparent;
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 5px 14px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    background: url(https://angular.pixelstrap.net/rica/down-black.afd18efaea6bc97e.png) no-repeat 95%;
+}
+
+.btn.btn-rounded {
+    border-radius: 100px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.btn.btn-rounded.color1 {
+    background-color: rgba(239, 63, 62, 1);
+    box-shadow: 1px 11px 20px 0 rgba(239, 63, 62, .12);
+}
+
+.book-btn-section .btn-rounded {
+    padding: 6px 14px;
+    font-size: 14px;
+    margin-top: 20px;
+    border-radius: 0;
+}
+
+.selector-box.show {
+    display: block;
+}
+
+.btn.btn-rounded.color1:hover {
+    background-color: #fff;
+    color: rgba(239, 63, 62, 1);
+    transition: all .5s ease;
+    border: 1px solid rgba(239, 63, 62, 1);
+    box-shadow: 1px 11px 20px 0 rgba(239, 63, 62, .22);
+}

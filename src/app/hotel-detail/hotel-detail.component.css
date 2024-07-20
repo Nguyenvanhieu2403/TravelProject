@@ -88,6 +88,12 @@ a:hover {
     position: relative;
 }
 
+.sticky-cls {
+    position: sticky;
+    z-index: 1;
+    top: 75px;
+}
+
 
 @media (max-width: 1367px) {
     .small-section {

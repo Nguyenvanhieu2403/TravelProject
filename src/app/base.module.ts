@@ -25,6 +25,7 @@ import { PaginatorModule } from 'primeng/paginator';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LightgalleryModule } from 'lightgallery/angular';
 import { BarRating } from 'ngx-bar-rating';
+import { ToastModule } from 'primeng/toast';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HttpLoaderFactory } from './app.module';
@@ -70,6 +71,8 @@ import { FilterHotelsDataComponent } from './hotels/FilterHotelsData/FilterHotel
 import { HotelDetailComponent } from './hotel-detail/hotel-detail.component';
 import { HotelDetailTitleComponent } from './hotel-detail/hotel-detail-title/hotel-detail-title.component';
 import { HotelDetailTabSliderComponent } from './hotel-detail/hotel-detail-tab-slider/hotel-detail-tab-slider.component';
+import { HotelDetailNavComponent } from './hotel-detail/hotel-detail-nav/hotel-detail-nav.component';
+import { HotelDetailBookingComponent } from './hotel-detail/hotel-detail-nav/hotel-detail-booking/hotel-detail-booking.component';
 
 
 @NgModule({
@@ -106,7 +109,8 @@ import { HotelDetailTabSliderComponent } from './hotel-detail/hotel-detail-tab-s
     ImageModule,
     LightboxModule,
     LightgalleryModule,
-    BarRating
+    BarRating,
+    ToastModule
   ],
   declarations: [
     HomePageComponent,
@@ -150,7 +154,9 @@ import { HotelDetailTabSliderComponent } from './hotel-detail/hotel-detail-tab-s
     FilterHotelsDataComponent,
     HotelDetailComponent,
     HotelDetailTitleComponent,
-    HotelDetailTabSliderComponent
+    HotelDetailTabSliderComponent,
+    HotelDetailNavComponent,
+    HotelDetailBookingComponent
   ],
   providers: [CommonModule, DatePipe],
 })

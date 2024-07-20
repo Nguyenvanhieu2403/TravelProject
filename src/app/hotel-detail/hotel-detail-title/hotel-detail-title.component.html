@@ -2,7 +2,7 @@
   <div class="hotel-name">
     <div class="left-part">
       <div class="top">
-        <h2>sea view hotel</h2>
+        <h2>{{title}}</h2>
         <div class="rating">
           <ngb-rating [rate]="rating"></ngb-rating>
         </div>
@@ -25,7 +25,7 @@
     </div>
     <div class="right-part">
       <h2 class="price">
-        $250.00 
+        ${{price | number : '1.2-2'}}
         <span>/ per night</span>
       </h2>
       <a href="" class="btn btn-rounded btn-sm color1">book this now</a>
