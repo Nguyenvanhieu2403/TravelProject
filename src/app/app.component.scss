@@ -41,3 +41,237 @@ p {
     color: #bcbcbc;
     letter-spacing: .03em;
 }
+
+.flight-home .owl-carousel .owl-stage-outer 
+.ng-star-inserted div .owl-stage  {
+    width: 4887px !important;
+}
+
+.food-home .owl-carousel .owl-stage-outer 
+.ng-star-inserted div .owl-stage  {
+    width: 4887px !important;
+}
+
+.gallary-home .owl-carousel .owl-stage-outer 
+.ng-star-inserted div .owl-stage  {
+    width: 4887px !important;
+}
+
+.category-box .rating span.ng-star-inserted {
+    font-size: 18px;
+    margin: 0 2px;
+    color: #fc3;
+}
+
+.star-categogy .rating span {
+    font-size: 18px;
+    margin: 0 2px;
+    margin-top: -8px;
+    color: #fc3;
+}
+
+.hotel-name .rating span {
+    font-size: 1.4rem;
+    margin: 0 2px;
+    margin-top: -8px;
+    color: #fc3;
+}
+
+.review-box .rating span {
+    font-size: 1.4rem;
+    margin: 0 2px;
+    margin-top: -8px;
+    color: #fc3;
+}
+
+.range-slider .ngx-slider .ngx-slider-pointer {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: -4px;
+    width: 8px;
+    height: 12px;
+    background: rgba(239, 63, 62, 1);
+    cursor: pointer;
+}
+
+.range-slider .ngx-slider .ngx-slider-pointer:focus-visible{
+    outline: none;
+}
+
+.range-slider .ngx-slider .ngx-slider-tick.ngx-slider-selected {
+    background: rgba(239, 63, 62,1);
+}
+
+.range-slider .ngx-slider .ngx-slider-selection {
+    background: rgba(239, 63, 62,1);
+}
+
+.range-slider .ngx-slider .ngx-slider-pointer:after {
+    display: none;
+}
+
+.range-slider .ngx-slider .ngx-slider-bubble.ngx-slider-model-high {
+    background-color: rgba(239, 63, 62, 1);
+    color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .rating span {
+    font-size: 18px;
+    margin: 0 2px;
+    color: #fc3;
+}
+
+.hotel-detail-img .bg-size img {
+    width: 100%;
+}
+
+.hotel-detail-tab-menu a {
+    text-decoration: none !important;
+    color: #000;
+    font-weight: 600;
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    background: #ffffff;
+    border-color: rgba(239, 63, 62, 1);
+    color: rgba(239, 63, 62);
+}
+
+.p-tabview-panels {
+    box-shadow: 0 2px 4px #dedede;
+}
+
+.book-btn-section .datepicker span{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+@media (min-width: 360px) {
+    .flight-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 317.667px !important;
+        margin-right: 10px;
+    }
+
+    .food-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 317.667px !important;
+        margin-right: 10px;
+    }
+
+    .gallary-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 330.333px !important;
+    }
+
+}
+
+
+@media (min-width: 430px) {
+    .flight-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 389.667px  !important;
+        margin-right: 60px;
+    }
+
+    .food-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 389.667px  !important;
+        margin-right: 50px;
+    }
+}
+
+
+
+@media (min-width: 390px) {
+    .flight-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 350.667px !important;
+        margin-right:10px;
+    }
+
+    .food-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 350px !important;
+        margin-right:76px;
+        // margin-right:21px;
+    }
+
+    .gallary-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 389.667px !important;
+    }
+}
+
+@media (min-width: 800px) {
+    .flight-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 318px !important;
+        margin-right: 60px;
+    }
+
+    .food-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 318px !important;
+        margin-right: 50px;
+    }
+}
+
+@media (min-width: 820px) {
+    .flight-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 318px !important;
+        margin-right: 60px;
+    }
+
+    .food-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 318px !important;
+        margin-right: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .flight-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 438px !important;
+        margin-right: 60px;
+    }
+
+    .food-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 438px !important;
+        margin-right: 50px;
+    }
+}
+
+@media (min-width: 1050px) {
+    .flight-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 389.667px !important;
+        margin-right: 60px;
+    }
+
+    .food-home .owl-carousel .owl-stage-outer 
+    .ng-star-inserted div .owl-stage .owl-item {
+        width: 435.333px !important;
+        margin-right: 50px;
+    }
+}
+
+@media(max-width: 1024px) and (min-width: 1050px) {
+    .flight-home .owl-carousel .owl-stage-outer .ng-star-inserted div .owl-stage .owl-item {
+        width: 389.667px !important;
+        margin-right: 60px;
+    }
+
+    .food-home .owl-carousel .owl-stage-outer .ng-star-inserted div .owl-stage .owl-item {
+        width: 389.667px !important;
+        margin-right: 50px;
+    }
+}
