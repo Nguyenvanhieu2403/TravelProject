@@ -7,9 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HotelDetailNavComponent implements OnInit {
 
-  @Input() priceOld: any;
-  @Input() priceNew: any;
-
   constructor() { }
 
   ngOnInit() {

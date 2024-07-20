@@ -9,17 +9,23 @@ import { FilterHotelDataServiceService } from '../../service/transfer/FilterHote
 })
 export class HotelDetailTitleComponent implements OnInit {
 
-
-  @Input() title: any;
-  @Input() price: number = 0;
-  @Input() rating : number = 5;
+  hotel: any;
+  title: any;
+  price: any;
+  rating: any;
   
-  constructor(config: NgbRatingConfig) { 
+  constructor(config: NgbRatingConfig, private _filterService: FilterHotelDataServiceService) { 
     config.max = 5;
 		config.readonly = true;
   }
 
   ngOnInit() {
+    this.hotel = this._filterService.getSharedData();
+    if(this.hotel) {
+      this.title = this.hotel.name;
+      this.price = this.hotel.priceNew;
+      this.rating = this.hotel.rating;
+    }
   }
 
 }

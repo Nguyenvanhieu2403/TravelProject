@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MessageService } from 'primeng/api';
+import { FilterHotelDataServiceService } from '../../../service/transfer/FilterHotelData-service.service';
 
 @Component({
   selector: 'app-hotel-detail-booking',
@@ -15,12 +16,19 @@ export class HotelDetailBookingComponent implements OnInit {
   room : number = 1;
   checkIn: Date | undefined;
   checkOut: Date | undefined;
-  @Input() priceOld: any;
-  @Input() priceNew: any;
 
-  constructor(private messageService: MessageService) { }
+  hotel: any;
+  priceOld: any;
+  priceNew: any;
+
+  constructor(private messageService: MessageService, private _filterService: FilterHotelDataServiceService) { }
 
   ngOnInit() {
+    this.hotel = this._filterService.getSharedData();
+    if(this.hotel) {
+      this.priceOld = this.hotel.priceOld;
+      this.priceNew = this.hotel.priceNew;
+    }
   }
 
   toggleShow(){

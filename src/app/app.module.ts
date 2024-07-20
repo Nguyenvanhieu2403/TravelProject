@@ -11,7 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MenuComponent } from './navbar/menu/menu.component';
 import { GoToTopComponent } from './common/GoToTop/GoToTop.component';
 import { FooterComponent } from './Footer/Footer.component';
-import { HotelDetailComponent } from './hotel-detail/hotel-detail.component';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
