@@ -39,7 +39,7 @@
               <div class="col">
                 <div class="boxes">
                   <img src="../../../assets/img/social/google.png" alt="" class="img-fluid blur-up lazyload">
-                  <h6>google</h6>
+                  <h6 (click)="externalLogin()">google</h6>
                 </div>
               </div>
             </div>
@@ -50,19 +50,20 @@
           <form action="">
             <div class="form-group">
               <label for="exampleInputEmail1">user name or Email address</label>
-              <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" class="form-control">
+              <input type="email" id="exampleInputEmail1" [(ngModel)]="userName" name="userName" aria-describedby="emailHelp" placeholder="Enter email" class="form-control">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" id="exampleInputPassword1" placeholder="Password" class="form-control">
+              <input type="password" id="exampleInputPassword1" [(ngModel)]="passWord" name="passWord" placeholder="Password" class="form-control">
             </div>
             <div class="form-group form-check">
               <input type="checkbox" id="exampleCheck1" class="form-check-input">
               <label for="exampleCheck1" class="form-check-label">remember me</label>
             </div>
             <div class="button-bottom">
-              <button type="submit" class="w-100 btn btn-solid">login</button>
+              <p-toast></p-toast>
+              <button type="submit" class="w-100 btn btn-solid" (click)="login()">login</button>
               <div class="divider">
                  <h6 _ngcontent-ng-c3052143649="">or</h6>
               </div>

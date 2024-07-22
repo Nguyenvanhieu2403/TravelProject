@@ -1,5 +1,5 @@
 <header class="inner-page">
-  <div class="container">
+  <div class="container m-0">
     <div class="row">
       <div class="col">
         <div class="menu">
@@ -19,10 +19,51 @@
                   <option class="language" value="en-US">Eng</option>
                 </select>
               </li>
-              <li class="account">
-                <a href="/login">
+              <li *ngIf="!IsUser" class="account">
+                <a  href="/login">
                   <i class="pi pi-user"></i>
                 </a>
+              </li>
+              <li *ngIf="IsUser" class="user">
+                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" class="rounded-circle me-3" style="width: 30px;" alt="Avatar" />
+                <span class="profile-username">
+                  <span class="op-7">Hi,</span>
+                  <span class="fw-bold">{{userName}}</span>
+                </span>
+                <ul class="user-options">
+                  <div class="dropdown-user-scroll scrollbar-outer">
+                    <li>
+                      <div class="user-box">
+                        <div class="avatar-lg">
+                          <img
+                            src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
+                            alt="image profile"
+                            class="avatar-img rounded"
+                          />
+                        </div>
+                        <div class="u-text">
+                          <h4>{{fullName}}</h4>
+                          <p class="text-muted">{{email}}</p>
+                          <a
+                            href=""
+                            class="btn btn-xs btn-secondary btn-sm"
+                            >View Profile</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">My Profile</a>
+                      <a class="dropdown-item" href="#">My Balance</a>
+                      <a class="dropdown-item" href="#">Inbox</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item account-setting" href="#">Account Setting</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item logout" (click)="logout()">Logout</a>
+                    </li>
+                  </div>
+                </ul>
               </li>
               <li class="settings">
                 <a (click)="showSetting()">

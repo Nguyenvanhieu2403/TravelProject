@@ -26,6 +26,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LightgalleryModule } from 'lightgallery/angular';
 import { BarRating } from 'ngx-bar-rating';
 import { ToastModule } from 'primeng/toast';
+import { AvatarModule } from 'primeng/avatar';
+import { DialogModule } from 'primeng/dialog';
+import { InputOtpModule } from 'primeng/inputotp';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HttpLoaderFactory } from './app.module';
@@ -73,7 +76,7 @@ import { HotelDetailTitleComponent } from './hotel-detail/hotel-detail-title/hot
 import { HotelDetailTabSliderComponent } from './hotel-detail/hotel-detail-tab-slider/hotel-detail-tab-slider.component';
 import { HotelDetailNavComponent } from './hotel-detail/hotel-detail-nav/hotel-detail-nav.component';
 import { HotelDetailBookingComponent } from './hotel-detail/hotel-detail-nav/hotel-detail-booking/hotel-detail-booking.component';
-
+import { HotelDetailInfoComponent } from './hotel-detail/hotel-detail-nav/hotel-detail-info/hotel-detail-info.component';
 
 @NgModule({
   imports: [
@@ -81,7 +84,7 @@ import { HotelDetailBookingComponent } from './hotel-detail/hotel-detail-nav/hot
     AppRoutingModule,
     MenubarModule,
     HttpClientModule,
-    
+
     DropdownModule,
     FormsModule,
     BrowserAnimationsModule,
@@ -96,10 +99,10 @@ import { HotelDetailBookingComponent } from './hotel-detail/hotel-detail-nav/hot
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
+        deps: [HttpClient],
+      },
     }),
-    CarouselModule ,
+    CarouselModule,
     RatingModule,
     PasswordModule,
     SliderModule,
@@ -110,7 +113,10 @@ import { HotelDetailBookingComponent } from './hotel-detail/hotel-detail-nav/hot
     LightboxModule,
     LightgalleryModule,
     BarRating,
-    ToastModule
+    ToastModule,
+    AvatarModule,
+    DialogModule,
+    InputOtpModule
   ],
   declarations: [
     HomePageComponent,
@@ -156,8 +162,12 @@ import { HotelDetailBookingComponent } from './hotel-detail/hotel-detail-nav/hot
     HotelDetailTitleComponent,
     HotelDetailTabSliderComponent,
     HotelDetailNavComponent,
-    HotelDetailBookingComponent
+    HotelDetailBookingComponent,
+    HotelDetailInfoComponent,
   ],
-  providers: [CommonModule, DatePipe],
+  providers: [
+    CommonModule, 
+    DatePipe,
+  ],
 })
-export class BaseModule { }
+export class BaseModule {}
