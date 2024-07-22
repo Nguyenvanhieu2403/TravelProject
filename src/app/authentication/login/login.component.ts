@@ -61,8 +61,4 @@ export class LoginComponent implements OnInit {
         console.log(error);
       });
   }
-
-  externalLogin = () => {
-    this.service.signInWithGoogle();
-  }
 }
