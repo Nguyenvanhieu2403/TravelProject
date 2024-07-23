@@ -1,0 +1,36 @@
+.contact-title {
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.weather-sec {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .03em;
+}
+
+.weather-sec li h5 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.weather-sec li img {
+    width: 40px;
+    margin: 0;
+}
+
+.weather-sec li h6 {
+    font-size: 12px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,9 @@
+<h6 class="contact-title">weather</h6>
+<ul class="weather-sec">
+  <li *ngFor="let item of listWeather">
+     <h5>{{item.date}}</h5>
+     <img [src]="item.img" alt="">
+     <h6>{{item.avgtemp_C}} °C</h6>
+  </li>
+  
+</ul>

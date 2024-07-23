@@ -34,7 +34,6 @@ export class LoginComponent implements OnInit {
     this.service
       .login({ userName: this.userName, password: this.passWord })
       .then((res: any) => {
-        console.log(res);
         if (res.statusCode == 200) {
           this.messageService.add({
             severity: 'success',
@@ -45,7 +44,9 @@ export class LoginComponent implements OnInit {
           this.common.SetCookie('token', result.token, 7);
           this.common.SetCookieObject('authData', result.user, 7);
           setTimeout(() => {
-            this.router.navigate(['/']);
+            this.router.navigate(['/']).then(() => {
+              location.reload();
+            });
           }, 2000);
           this.authService.getUserData();
         } else {

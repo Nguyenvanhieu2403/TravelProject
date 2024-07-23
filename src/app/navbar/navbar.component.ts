@@ -68,7 +68,9 @@ export class NavbarComponent implements OnInit {
       detail: 'Logout success',
     });
     setTimeout(() => {
-      this.router.navigate(['/login']);
+      this.router.navigate(['/login']).then(() => {
+        location.reload();
+      });
     }, 2000);
   }
 }

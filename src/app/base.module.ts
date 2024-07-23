@@ -77,6 +77,7 @@ import { HotelDetailTabSliderComponent } from './hotel-detail/hotel-detail-tab-s
 import { HotelDetailNavComponent } from './hotel-detail/hotel-detail-nav/hotel-detail-nav.component';
 import { HotelDetailBookingComponent } from './hotel-detail/hotel-detail-nav/hotel-detail-booking/hotel-detail-booking.component';
 import { HotelDetailInfoComponent } from './hotel-detail/hotel-detail-nav/hotel-detail-info/hotel-detail-info.component';
+import { HotelDetailWeatherComponent } from './hotel-detail/hotel-detail-nav/hotel-detail-weather/hotel-detail-weather.component';
 
 @NgModule({
   imports: [
@@ -116,7 +117,7 @@ import { HotelDetailInfoComponent } from './hotel-detail/hotel-detail-nav/hotel-
     ToastModule,
     AvatarModule,
     DialogModule,
-    InputOtpModule
+    InputOtpModule,
   ],
   declarations: [
     HomePageComponent,
@@ -164,10 +165,8 @@ import { HotelDetailInfoComponent } from './hotel-detail/hotel-detail-nav/hotel-
     HotelDetailNavComponent,
     HotelDetailBookingComponent,
     HotelDetailInfoComponent,
+    HotelDetailWeatherComponent,
   ],
-  providers: [
-    CommonModule, 
-    DatePipe,
-  ],
+  providers: [CommonModule, DatePipe],
 })
 export class BaseModule {}

@@ -49,32 +49,37 @@
           </div>
           <form action="">
             <div class="form-group">
-              <label for="exampleInputEmail1">user name or Email address</label>
-              <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" class="form-control">
+              <label for="UserName">user name</label>
+              <input type="email" id="UserName" [(ngModel)]="UserName" name="UserName" aria-describedby="emailHelp" placeholder="Enter email" class="form-control">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">FullName</label>
-              <input type="text" id="exampleInputPassword1" placeholder="FullName" class="form-control">
+              <label for="FullName">FullName</label>
+              <input type="text" id="FullName" [(ngModel)]="FullName" name="FullName" placeholder="FullName" class="form-control">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" id="exampleInputPassword1" placeholder="Password" class="form-control">
+              <label for="Password">Password</label>
+              <input type="password" id="Password" [(ngModel)]="Password" name="Password" placeholder="Password" class="form-control">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Confirm Password</label>
-              <input type="password" id="exampleInputPassword1" placeholder="Confirm Password" class="form-control">
+              <label for="ConfirmPassword">Confirm Password</label>
+              <input type="password" id="ConfirmPassword" [(ngModel)]="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password" class="form-control">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Phone Number</label>
-              <input type="text" id="exampleInputPassword1" placeholder="Phone Number" class="form-control">
+              <label for="Email">Email</label>
+              <input type="text" id="Email" [(ngModel)]="Email" name="Email" placeholder="Email" class="form-control">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Address</label>
-              <input type="text" id="exampleInputPassword1" placeholder="Address" class="form-control">
+              <label for="PhoneNumber">Phone Number</label>
+              <input type="text" id="PhoneNumber" [(ngModel)]="PhoneNumber" name="PhoneNumber" placeholder="Phone Number" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="Address">Address</label>
+              <input type="text" id="Address" [(ngModel)]="Address" name="Address" placeholder="Address" class="form-control">
             </div>
             <div class="button-bottom">
-              <button (click)="showDialog()" type="submit" class="w-100 btn btn-solid">register</button>
+              <p-toast></p-toast>
+              <button (click)="register()" type="submit" class="w-100 btn btn-solid">register</button>
               <div class="divider">
                  <h6 _ngcontent-ng-c3052143649="">or</h6>
               </div>
@@ -107,8 +112,8 @@
     </p-inputOtp>
     <p class="text-color-secondary block mb-3">Send OTP again({{countdown}}s)</p>
     <div class="flex justify-content-between mt-3 align-self-stretch">
-        <p-button label="Resend Code" [link]="true" class="p-0"/>
-        <p-button label="Submit Code"/>
+        <p-button label="Resend Code" [link]="true" [disabled]="countdown > 0" (onClick)="resendCode()" class="p-0"/>
+        <p-button (onClick)="submitOTP()" label="Submit Code"/>
     </div>
   </div>
 </p-dialog>
