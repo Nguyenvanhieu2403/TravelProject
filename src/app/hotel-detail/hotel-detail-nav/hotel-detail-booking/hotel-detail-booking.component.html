@@ -59,11 +59,9 @@
   </div>
   <div class="selector">
      <select>
-        <option value="" disabled="" selected="">Room Type</option>
-        <option value="saab">Deluxe Room</option>
-        <option value="audi">Suite</option>
-        <option value="opel">Royal room</option>
+        <option *ngFor="let item of roomType" value="{{item.value}}" >{{item.name}}</option>
      </select>
   </div>
-  <a class="btn btn-rounded btn-sm color1" href="/rica/hotel/booking/hotel-booking">book this now</a>
+  <p-toast />
+  <a class="btn btn-rounded btn-sm color1" (click)="booking()">book this now</a>
 </div>

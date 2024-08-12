@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MessageService } from 'primeng/api';
 import { FilterHotelDataServiceService } from '../../../service/transfer/FilterHotelData-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hotel-detail-booking',
@@ -16,12 +17,17 @@ export class HotelDetailBookingComponent implements OnInit {
   room : number = 1;
   checkIn: Date | undefined;
   checkOut: Date | undefined;
+  roomType: any;
 
   hotel: any;
   priceOld: any;
   priceNew: any;
 
-  constructor(private messageService: MessageService, private _filterService: FilterHotelDataServiceService) { }
+  constructor(
+    private messageService: MessageService, 
+    private _filterService: FilterHotelDataServiceService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.hotel = this._filterService.getSharedData();
@@ -29,6 +35,12 @@ export class HotelDetailBookingComponent implements OnInit {
       this.priceOld = this.hotel.priceOld;
       this.priceNew = this.hotel.priceNew;
     }
+
+    this.roomType= [
+      {name: "Deluxe room", value: "Deluxe Room"},
+      {name: "Suite", value: "Suite"},
+      {name: "Royal room", value: "Royal Room"},
+    ]
   }
 
   toggleShow(){
@@ -79,6 +91,36 @@ export class HotelDetailBookingComponent implements OnInit {
       return;
     }
     this.room--;
+  }
+
+  booking() {
+    if(!this.checkIn || !this.checkOut){
+      this.messageService.add({
+        severity: 'error',
+        summary: 'Error',
+        detail: 'Please select check-in and check-out date',
+      });
+      return;
+    }
+    if(this.checkIn > this.checkOut){
+      this.messageService.add({
+        severity: 'error',
+        summary: 'Error',
+        detail: 'Check-out date must be greater than check-in date',
+      });
+      return;
+    }
+
+    if(this.adult < this.room){
+      this.messageService.add({
+        severity: 'error',
+        summary: 'Error',
+        detail: 'Number of adults must be greater than number of rooms',
+      });
+      return;
+    }
+
+    this.router.navigate(['/HotelBooking']);
   }
 
 }

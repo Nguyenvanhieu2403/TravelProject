@@ -14,6 +14,9 @@ import { AuthService } from '../../service/transfer/auth.service';
 export class LoginComponent implements OnInit {
   userName: any;
   passWord: any;
+  CLIENT_ID: any =
+    '578824434793-uksf883fjufqsdl0vb919q5jn41lr6g7.apps.googleusercontent.com';
+  LINK_GET_TOKEN: any = `https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile&response_type=token&redirect_uri=http://localhost:4200&client_id=${this.CLIENT_ID}`;
 
   private common: RicaCommon = new RicaCommon();
 
@@ -61,5 +64,10 @@ export class LoginComponent implements OnInit {
       .catch((error: any) => {
         console.log(error);
       });
+  }
+
+  loginGoogle() {
+    console.log(this.LINK_GET_TOKEN);
+    window.location.href = this.LINK_GET_TOKEN;
   }
 }
