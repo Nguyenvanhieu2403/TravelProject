@@ -1,0 +1,74 @@
+section, .section-t-space {
+    padding-top: 150px;
+}
+
+.section-b-space {
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.success-section .success-detail {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.success-section .success-detail img {
+    margin-bottom: calc(15px + 15*(100vw - 320px) / 1600);
+}
+
+h2, .h2 {
+    font-size: calc(22px + .00875*(100vw - 320px));
+    font-weight: 700;
+    letter-spacing: .001em;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.success-section .success-detail p {
+    font-size: 16px;
+    max-width: 48%;
+    margin: 0 auto;
+    color: #000000b3;
+    line-height: 30px;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+
+.btn {
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 0;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+
+.btn.btn-solid {
+    background-color: rgba(239, 63, 62, 1);
+    color: #fff;
+    padding: 9px 20px;
+    box-shadow: 1px 11px 20px rgba(239, 63, 62, .12);
+}
+
+.success-section .success-detail .btn {
+    padding: 8px 20px;
+    text-transform: capitalize;
+    margin-top: 18px;
+}
+
+.btn.btn-solid:hover {
+    transition: .3s ease-in-out;
+    background-color: #fff;
+    color: rgba(239, 63, 62, 1);
+    border: 1px solid rgba(239, 63, 62, 1);
+    box-shadow: 1px 11px 20px rgba(239, 63, 62, .22);
+}

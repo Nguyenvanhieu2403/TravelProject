@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hotel-booking',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotelBookingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  payment() {
+    return this.router.navigate(['/hotel-booking-failed']);
   }
 
 }
