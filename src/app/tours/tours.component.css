@@ -1,0 +1,94 @@
+.bg-size {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.parallax-img {
+    background-attachment: fixed;
+}
+
+.breadcrumb-section {
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.breadcrumb-section .breadcrumb-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    padding-top: 93px;
+    text-align: center;
+}
+
+.breadcrumb-section .breadcrumb-content>div {
+    padding: 40px 65px;
+    background-color: #ffffff1a;
+}
+
+.breadcrumb-section .breadcrumb-content.overlay-black>div {
+    background-color: #0000001a;
+}
+
+.breadcrumb-section .breadcrumb-content h2, .breadcrumb-section .breadcrumb-content .h2 {
+    font-size: calc(18px + .01125*(100vw - 320px));
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 16px;
+    margin-top: -2px;
+}
+
+.breadcrumb-section .breadcrumb-content .breadcrumb {
+    background-color: transparent;
+    margin-bottom: -7px !important;
+    padding: .75rem 1rem;
+    justify-content: center;
+}
+
+.breadcrumb-section .breadcrumb-content .breadcrumb .breadcrumb-item {
+    font-size: calc(14px + .0025*(100vw - 320px));
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+a {
+    transition: .5s ease;
+    letter-spacing: .03em;
+    text-decoration: none;
+}
+
+.breadcrumb-section .breadcrumb-content .breadcrumb .breadcrumb-item a {
+    font-size: calc(14px + .0025*(100vw - 320px));
+    color: #fff;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: .5rem;
+}
+
+.breadcrumb-section .breadcrumb-content .breadcrumb .breadcrumb-item {
+    font-size: calc(14px + .0025*(100vw - 320px));
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.breadcrumb-item+.breadcrumb-item:before {
+    float: left;
+    padding-right: .5rem;
+}
+
+.breadcrumb-section .breadcrumb-content .breadcrumb .breadcrumb-item+.breadcrumb-item:before {
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "\f101";
+    color: #fff;
+}

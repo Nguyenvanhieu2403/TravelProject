@@ -81,6 +81,8 @@ import { HotelDetailWeatherComponent } from './hotel-detail/hotel-detail-nav/hot
 import { HotelBookingComponent } from './hotel-booking/hotel-booking.component';
 import { HotelBookingFailedComponent } from './hotel-booking/hotel-booking-failed/hotel-booking-failed.component';
 import { HotelBookingSuccessComponent } from './hotel-booking/hotel-booking-success/hotel-booking-success.component';
+import { ToursComponent } from './tours/tours.component';
+import { AnimationBirdComponent } from './tours/animation-bird/animation-bird.component';
 
 @NgModule({
   imports: [
@@ -172,6 +174,8 @@ import { HotelBookingSuccessComponent } from './hotel-booking/hotel-booking-succ
     HotelBookingComponent,
     HotelBookingFailedComponent,
     HotelBookingSuccessComponent,
+    ToursComponent,
+    AnimationBirdComponent
   ],
   providers: [CommonModule, DatePipe],
 })
