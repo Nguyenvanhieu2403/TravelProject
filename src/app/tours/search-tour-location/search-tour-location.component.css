@@ -1,0 +1,140 @@
+.bg-inner {
+    background-color: #f9f9f9;
+}
+
+.book-table {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 30px;
+}
+
+
+
+.book-table.single-table {
+    background-image: none;
+    overflow: visible;
+}
+
+.book-table .table-form {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.book-table.single-table .table-form {
+    margin-bottom: 0;
+    box-shadow: 0 15px 30px #0000001c;
+    margin-top: -75px;
+}
+
+.book-table.single-table .table-form.classic-form {
+    border-radius: 0;
+    padding: 25px;
+    margin-top: 0;
+    box-shadow: none;
+}
+
+.book-table .table-form form {
+    display: flex;
+    align-items: center;
+}
+
+.book-table .table-form form .form-group {
+    margin-bottom: 0;
+    margin-right: 40px;
+    position: relative;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    appearance: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #dee2e6;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control {
+    height: auto;
+}
+
+.book-table .table-form form .form-group input {
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 35px;
+    padding: 20px 20px 18px;
+    line-height: 1;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.book-table.single-table .table-form.classic-form form .form-group input {
+    border-radius: 0;
+    padding: 15px 15px 13px 25px;
+}
+
+.book-table.single-table .table-form.classic-form form .form-group input:focus {
+    box-shadow: none;
+}
+
+.book-table .table-form form .form-group img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.book-table.single-table .table-form.classic-form form .form-group img {
+    right: 15px;
+    top: 15px;
+} 
+
+.btn {
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 0;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.btn.btn-rounded {
+    border-radius: 100px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.btn.btn-rounded.color1 {
+    background-color: rgba(239, 63, 62, 1);
+    box-shadow: 1px 11px 20px rgba(239, 63, 62, .12);
+}
+
+.book-table .table-form form .btn {
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-left: 15px;
+}
+
+.book-table.single-table .table-form.classic-form form .btn-rounded {
+    border-radius: 0;
+    margin-left: 0;
+}
+
+.btn.btn-rounded.color1:hover {
+    background-color: #fff;
+    color: rgba(239, 63, 62, 1);
+    transition: all .5s ease;
+    border: 1px solid rgba(239, 63, 62, 1);
+    box-shadow: 1px 11px 20px rgba(239, 63, 62, .22);
+}

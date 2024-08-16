@@ -83,6 +83,9 @@ import { HotelBookingFailedComponent } from './hotel-booking/hotel-booking-faile
 import { HotelBookingSuccessComponent } from './hotel-booking/hotel-booking-success/hotel-booking-success.component';
 import { ToursComponent } from './tours/tours.component';
 import { AnimationBirdComponent } from './tours/animation-bird/animation-bird.component';
+import { SearchFilterTourComponent } from './tours/filter-tour/search-filter-tour/search-filter-tour.component';
+import { FilterTourComponent } from './tours/filter-tour/filter-tour.component';
+import { SearchTourLocationComponent } from './tours/search-tour-location/search-tour-location.component';
 
 @NgModule({
   imports: [
@@ -175,7 +178,10 @@ import { AnimationBirdComponent } from './tours/animation-bird/animation-bird.co
     HotelBookingFailedComponent,
     HotelBookingSuccessComponent,
     ToursComponent,
-    AnimationBirdComponent
+    AnimationBirdComponent,
+    SearchFilterTourComponent,
+    FilterTourComponent,
+    SearchTourLocationComponent,
   ],
   providers: [CommonModule, DatePipe],
 })

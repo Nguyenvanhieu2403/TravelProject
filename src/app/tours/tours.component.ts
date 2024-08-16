@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToursComponent implements OnInit {
 
+  isShowSearch = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  handleShowSearch(isShown: boolean) {
+    this.isShowSearch = isShown;
   }
 
 }

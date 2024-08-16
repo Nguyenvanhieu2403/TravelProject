@@ -92,3 +92,16 @@ a {
     content: "\f101";
     color: #fff;
 }
+
+.small-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.bg-inner {
+    background-color: #f9f9f9;
+}
