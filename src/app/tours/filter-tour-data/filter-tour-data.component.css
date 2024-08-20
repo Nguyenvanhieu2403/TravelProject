@@ -294,3 +294,13 @@ li {
     left: 0;
     bottom: -15px;
 }
+
+.special-section .special-box:hover {
+    box-shadow: 5px 8.66px 30px #0000001a;
+    transition: all .5s ease;
+}
+
+.special-section .special-box:hover .special-img .bg-size {
+    transform: scale(1.03);
+    transition: all .5s ease;
+}
