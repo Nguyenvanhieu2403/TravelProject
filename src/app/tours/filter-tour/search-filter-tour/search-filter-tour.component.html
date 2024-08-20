@@ -1,0 +1,76 @@
+<div class="left-sidebar filter-bottom-content d-block" [class.open]="isOpen">
+  <div class="middle-part collection-collapse-block open">
+    <div class="collection-collapse-block-content row">
+      <div class="filter-block col">
+        <div class="collection-collapse-block open">
+          <h6 class="collapse-block-title">trip duration</h6>
+          <div class="collection-collapse-block-content">
+            <div class="collection-brand-filter">
+              <div class="form-check collection-filter-checkbox ng-star-inserted" *ngFor="let facility of stripDurations">
+                <input type="checkbox" class="form-check-input" [id]="facility.id" [checked]="stripDuration.includes(facility.id)" (change)="toggleFacility(facility)">
+                <label class="form-check-label" [for]="facility.id">{{ facility.name }}</label>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-block col">
+        <div class="collection-collapse-block open">
+          <h6 class="collapse-block-title">travel type</h6>
+          <div class="collection-collapse-block-content">
+            <div class="collection-brand-filter">
+              <div class="form-check collection-filter-checkbox ng-star-inserted" *ngFor="let language of travelTypes">
+                <input type="checkbox" class="form-check-input" [id]="language.id" (change)="toggleHostLanguage(language)">
+                <label class="form-check-label" [for]="language.id">{{ language.name }}</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-block col">
+        <div class="collection-collapse-block open">
+          <h6 class="collapse-block-title">Star Categogy</h6>
+          <div class="collection-collapse-block-content">
+            <div class="collection-brand-filter star-categogy">
+              <div class="form-check collection-filter-checkbox ng-star-inserted" *ngFor="let star of stars">
+                <input type="checkbox" class="form-check-input" [id]="star.id" (change)="toggleStarCategory(star)">
+                <label class="form-check-label rating" [for]="star.id">
+                  <ngb-rating [rate]="getStarRating(star)"></ngb-rating>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-block col">
+        <div class="collection-collapse-block open">
+          <h6 class="collapse-block-title">flights</h6>
+          <div class="collection-collapse-block-content">
+            <div class="collection-brand-filter">
+              <div class="form-check collection-filter-checkbox ng-star-inserted" *ngFor="let district of flightsList">
+                <input type="checkbox" class="form-check-input" [id]="district.id" (change)="toggleDistrict(district)">
+                <label class="form-check-label" [for]="district.id">{{ district.name }}</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-block col">
+        <div class="collection-collapse-block open">
+          <h6 class="collapse-block-title">budget</h6>
+          <div class="collection-collapse-block-content">
+            <div class="wrapper">
+              <div class="range-slider">
+                <ngx-slider [(value)]="value" [(highValue)]="highValue" (valueChange)="onSliderChange()" [options]="options"></ngx-slider>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-end button_bottom">
+        <a href="javascript:void(0)" class="btn btn-solid color1 me-2">apply</a>
+        <a href="javascript:void(0)" class="btn btn-solid color1 close-filter-bottom" (click)="showFilter()">close filter</a>
+      </div>
+    </div>
+  </div>
+</div>  

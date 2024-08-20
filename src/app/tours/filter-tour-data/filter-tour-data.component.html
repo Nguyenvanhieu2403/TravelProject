@@ -1,0 +1,73 @@
+<ul class="product-filter-tags">
+  <li class="me-1">
+    <a href="javascript:void(0)" class="filter_tag" *ngFor="let filter of getAllFilters()">
+      <span>{{ filter.value }}</span>
+      <button type="button" aria-label="Close" class="btn-close" (click)="removeFilter(filter.type, filter.value)"></button>
+    </a>
+    <a href="javascript:void(0)" class="filter_tag">Price: ${{PriceStart}} - ${{PriceEnd}}</a>
+  </li>
+</ul>
+<div class="product-wrapper-grid special-section grid-box">
+  <div class="row content grid">
+    <div style="cursor: pointer;" class="popular grid-item wow fadeInUp col-sm-6 col-xl-3 col-lg-4 filter_data" *ngFor="let item of filteredHotelItems" (click)="openHotelDetail(item)">
+      <div class="special-box">
+        <div class="special-img">
+          <a  class="bg-size" [ngStyle]="{'background-image': 'url(' + item.image + ')'}">
+            <img [src]="item.image" [alt]="item.name" class="img-fluid blur-up lazyload bg-img img-hotels">
+          </a>
+          <div class="top-icon">
+            <a>
+              <i class="pi pi-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="special-content">
+          <a>
+            <h5>
+              {{item.name}}
+              <span>
+                {{item.day}}
+              </span>
+            </h5>
+          </a>
+          <div class="tour-detail">
+            <h6>
+              <i class="fas fa-plane-departure me-3"></i> 
+              {{item.planeDeparture}}
+              <i class="fas fa-plane-arrival ms-3"></i>
+            </h6>
+            <div class="include-sec">
+               <span>include at this price</span>
+               <ul class="include">
+                  <li class="ng-star-inserted" *ngFor="let i of item.include">
+                    <img alt="icon" data-bs-toggle="tooltip" data-placement="top" title="Hotel" class="img-fluid blur-up lazyload" src="{{i.icon}}">
+                  </li>
+               </ul>
+            </div>
+            <div class="bottom-section">
+               <div class="price">
+                  <h6><del> ${{item.priceOld}}</del> ${{item.priceNew}}</h6>
+                  <span>price per person</span>
+               </div>
+            </div>
+         </div>
+        </div>
+        <div class="label-offer" *ngIf="item.offer">
+          {{item.offer}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class=" flex justify-content-center">
+  <p-paginator
+      (onPageChange)="onPageChange($event)"
+      [first]="first"
+      [rows]="rows"
+      [totalRecords]="totalRecords"
+      [showCurrentPageReport]="true"
+      [showPageLinks]="false"
+      [showJumpToPageDropdown]="false"
+      currentPageReportTemplate="Showing {first} to {last} of {totalRecords}" />
+</div>

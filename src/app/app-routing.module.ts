@@ -8,6 +8,7 @@ import { HotelDetailComponent } from './hotel-detail/hotel-detail.component';
 import { HotelBookingComponent } from './hotel-booking/hotel-booking.component';
 import { HotelBookingFailedComponent } from './hotel-booking/hotel-booking-failed/hotel-booking-failed.component';
 import { HotelBookingSuccessComponent } from './hotel-booking/hotel-booking-success/hotel-booking-success.component';
+import { ToursComponent } from './tours/tours.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'HotelBooking', component: HotelBookingComponent },
   { path: 'hotel-booking-success', component: HotelBookingSuccessComponent},
   { path: 'hotel-booking-failed', component: HotelBookingFailedComponent},
+  { path: 'tours', component: ToursComponent },
 ];
 
 @NgModule({
