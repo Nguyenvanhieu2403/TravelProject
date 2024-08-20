@@ -51,10 +51,10 @@ export class FilterTourComponent implements OnInit {
   }
 
   onFiltersChange(filtersData: {
-    facilities: string[],
-    hostLanguages: string[],
-    starCategories: string[],
-    districts: string[]
+    stripDuration: any[],
+    traveType: any[],
+    starCategories: any[],
+    flights: any[]
   }) {
     this.filtersData = filtersData;
     // Gửi dữ liệu lên component cha nếu cần

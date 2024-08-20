@@ -163,6 +163,19 @@ h5, .h5 {
         background-color: #fff !important;
         color: rgba(239, 63, 62, 1) !important;
     }
+
+    .filter-panel .respon-filter-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .filter-panel .respon-filter-btn h6, .filter-panel .respon-filter-btn .h6 {
+        font-size: calc(14px + .0025*(100vw - 320px));
+        text-transform: capitalize;
+        color: #000;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -171,9 +184,19 @@ h5, .h5 {
         position: absolute;
         right: 20px;
     }
+
+    .according-menu {
+        top: 0;
+        position: absolute;
+        right: 20px;
+    }
 }
 
 @media (max-width: 480px) {
+    .filter-panel, .mobile-filter {
+        padding: 15px 20px;
+    }
+
     .filter-panel, .mobile-filter {
         padding: 15px 20px;
     }
@@ -208,18 +231,58 @@ h5, .h5 {
     .filter-bottom-content .middle-part .collection-collapse-block-content .filter-block {
         flex: 0 0 100%;
     }
+
+    .view-map {
+        margin-right: 0;
+    }
+
+    .onclick-map.show {
+        display: block !important;
+    }
+
+    .onclick-map>div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 767px) {
 
     .filter-panel .filter-bottom-title {
+        width: 100%;
+    }
+    .filter-bottom-title {
+        margin-left: auto;
+    }
+
+    .filter-panel {
+        display: block;
+    }
+
+    .filter-panel .right-panel.search_filter {
+        width: 100%;
+    }
+
+    .view-map {
+        width: 100%;
+    }
+
+    .right-panel {
+        padding-top: 20px;
         margin-top: 20px;
         border-top: 1px solid #f9f9f9;
-        width: 100%;
-        padding-top: 20px;
     }
-    .filter-panel .filter-bottom-title h5, .filter-panel .filter-bottom-title .h5 {
-        margin-left: auto;
+
+    .filter-panel .right-panel.search_filter .filter-bottom-title {
+        padding-left: 0;
+        padding-top: 0;
+        margin-top: 0;
+        border-top: none;
+        width: 50%;
+    }
+
+    .book-table.single-table {
+        background-color: transparent;
     }
 }
 

@@ -138,3 +138,35 @@
     border: 1px solid rgba(239, 63, 62, 1);
     box-shadow: 1px 11px 20px rgba(239, 63, 62, .22);
 }
+
+@media (max-width: 767px) {
+    .book-table .table-form form {
+        display: block;
+    }
+
+    .book-table .table-form form .btn-rounded {
+        margin-left: 0;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .book-table .table-form form .row {
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .book-table .table-form form .form-group, .book-table .table-form form .gj-datepicker {
+        margin-right: 0;
+    }
+
+    .book-table .table-form form .row>div+div {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .book-table.single-table .table-form.classic-form form .form-group input {
+        padding: 8px 15px 8px 25px;
+    }
+}

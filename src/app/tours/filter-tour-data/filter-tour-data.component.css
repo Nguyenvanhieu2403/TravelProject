@@ -1,0 +1,296 @@
+ol, ul {
+    padding-left: 2rem;
+}
+
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .03em;
+}
+
+.me-1 {
+    margin-right: .25rem !important;
+}
+
+.product-filter-tags li {
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+ul.product-filter-tags li {
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+a {
+    transition: .5s ease;
+    letter-spacing: .03em;
+    text-decoration: none;
+}
+
+.product-filter-tags li .filter_tag {
+    color: #777;
+    border: 1px solid #777777;
+    padding: 4px 10px 4px 12px;
+    text-transform: capitalize;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.special-section.grid-box {
+    margin-top: 30px;
+}
+
+.special-section .special-box {
+    box-shadow: 5px 8.66px 30px #0000000d;
+    transition: all .5s ease;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 9px #e4e4e4b3;
+}
+
+.special-section.grid-box .special-box {
+    position: relative;
+    background-color: #fff;
+}
+
+.special-section .special-box .special-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.special-section .special-box .special-img .bg-size {
+    transition: all .5s ease;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.ratio3_2 .bg-size:before {
+    padding-top: 66.66%;
+    content: "";
+    display: block;
+}
+
+.special-section .special-box .special-img .top-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.special-section .special-box.p-0 .special-img .top-icon {
+    top: 10px;
+    right: 10px;
+}
+
+a {
+    transition: .5s ease;
+    letter-spacing: .03em;
+    text-decoration: none;
+}
+
+.special-section .special-box .special-img .top-icon i {
+    color: #fff;
+    font-size: calc(14px + .00125*(100vw - 320px));
+    padding: 8px;
+    background-color: #0009;
+    border-radius: 100%;
+}
+
+.special-section .special-box .special-content {
+    padding: 40px;
+}
+
+.special-section.grid-box .special-box .special-content {
+    padding: 20px 25px 25px;
+    position: relative;
+}
+
+.special-section .special-box .special-content h5, .special-section .special-box .special-content .h5 {
+    color: #000;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    margin-top: -7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.special-section.grid-box .special-box .special-content h5, .special-section.grid-box .special-box .special-content .h5 {
+    font-size: calc(14px + .00375*(100vw - 320px));
+    text-transform: capitalize;
+    margin-bottom: 0;
+    align-items: center;
+    margin-top: -4px;
+    display: flex;
+    overflow: hidden;
+    max-width: 280px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.special-section.grid-box .special-box .special-content h5 span, .special-section.grid-box .special-box .special-content .h5 span {
+    color: #9a9a9a;
+    font-size: 14px;
+    margin-left: 8px;
+    font-weight: 500;
+    vertical-align: 3px;
+}
+
+.special-section.grid-box .special-box .special-content .tour-detail h6, .special-section.grid-box .special-box .special-content .tour-detail .h6 {
+    margin-top: 4px;
+    text-transform: capitalize;
+    color: #000000c7;
+    max-width: 360px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.special-section.grid-box .special-box .special-content .tour-detail h6 i, .special-section.grid-box .special-box .special-content .tour-detail .h6 i {
+    font-size: 12px;
+    color: gray;
+}
+
+.special-section.grid-box .special-box .special-content .tour-detail .include-sec {
+    margin-top: 14px;
+}
+
+.special-section.grid-box .special-box .special-content .tour-detail span {
+    font-size: calc(14px + .00125*(100vw - 320px));
+    font-weight: 600;
+    color: rgba(239, 63, 62, 1);
+    text-transform: capitalize;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.special-section.grid-box .special-box .special-content .tour-detail .include-sec ul {
+    text-transform: capitalize;
+    color: #000000c7;
+    margin-top: 10px;
+}
+
+li {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .03em;
+}
+
+.special-section.grid-box .special-box .special-content .tour-detail .include-sec ul li {
+    margin-right: 12px;
+    font-size: calc(14px + .00125*(100vw - 320px));
+    text-align: center;
+}
+
+.special-section.grid-box .special-box .special-content .tour-detail .include-sec ul li img {
+    width: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .price {
+    display: block;
+    align-items: center;
+    margin-top: 13px;
+    margin-bottom: -6px;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .price {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    margin-bottom: -6px;
+}
+
+.special-section.grid-box .special-box .special-content .tour-detail .bottom-section .price {
+    display: block;
+    margin-top: 15px;
+}
+
+.special-section.grid-box .col-xl-3 .special-box .special-content .bottom-section .price, .xs-section .col-lg-9 .special-section.grid-box .special-box .special-content .bottom-section .price {
+    display: block;
+    align-items: center;
+    margin-top: 13px;
+    margin-bottom: -6px;
+}
+
+.special-section.grid-box .special-box .special-content .tour-detail h6, .special-section.grid-box .special-box .special-content .tour-detail .h6 {
+    margin-top: 4px;
+    text-transform: capitalize;
+    color: #000000c7;
+    max-width: 360px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.special-section.grid-box .special-box .special-content .tour-detail .bottom-section .price h6, .special-section.grid-box .special-box .special-content .tour-detail .bottom-section .price .h6 {
+    color: rgba(239, 63, 62, 1);
+    font-size: calc(18px + .00375*(100vw - 320px));
+    font-weight: 800;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.special-section.grid-box .special-box .special-content .bottom-section .price del {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.special-section.grid-box .special-box .special-content .tour-detail .bottom-section .price h6 del, .special-section.grid-box .special-box .special-content .tour-detail .bottom-section .price .h6 del {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.special-section.grid-box .special-box .special-content .tour-detail .bottom-section .price span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #00000091;
+    text-transform: capitalize;
+}
+
+.special-section.grid-box .special-box .label-offer {
+    position: absolute;
+    background-color: rgba(239, 63, 62, 1);
+    color: #fff;
+    font-size: calc(12px + .00125*(100vw - 320px));
+    text-transform: capitalize;
+    top: 10px;
+    left: -10px;
+    padding: 2px 10px;
+    font-weight: 800;
+}
+
+.special-section.grid-box .special-box .label-offer:after {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-top: 15px solid #b8100f;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}

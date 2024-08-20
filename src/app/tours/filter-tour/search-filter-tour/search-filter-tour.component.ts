@@ -16,20 +16,101 @@ export class SearchFilterTourComponent implements OnInit {
   @Input() PriceMax: any;
   @Input() PriceMin: any;
 
-  facilitiesList: any = ['upto 3 nights', '4 to 7 nights', '7 to 11 nights', '11 to 15 nights', '15 to 21 nights', 'above 21 nights']
+  stripDurations: any = [ 
+    {
+      id: "1",
+      name: 'upto 3 nights'
+    },{
+        id: "2",
+        name: '3 to 7 nights'
+    },{
+        id: "3",
+        name: '7 to 11 nights'
+    },{
+        id: "4",
+        name: '11 to 15 nights'
+    },{
+        id: "5",
+        name: '15 to 21 nights'
+    },{
+        id: "6",
+        name: 'above 21 nights'
+    }
+  ];
+
+  travelTypes: any = [
+   {
+    id: "1",
+    name:  'family'
+   },
+    {
+      id: "2",
+      name: 'honeymoon'
+    },
+    {
+      id: "3",
+      name: 'beach'
+    },
+    {
+      id: "4",
+      name: 'cruise'
+    },
+    {
+      id: "5",
+      name: 'adventure'
+    },
+    {
+      id: "6",
+      name: 'shopping'
+    }
+  ];
+
+  stars: any = [
+    {
+      id: "5",
+      name: 'star 5'
+    },
+    {
+      id: "4",
+      name: 'star 4'
+    },
+    {
+      id: "3",
+      name: 'star 3'
+    },
+    {
+      id: "2",
+      name: 'star 2'
+    },
+    {
+      id: "1",
+      name: 'star 1'
+    }
+  ];
+
+  flightsList: any = [
+    {
+      id: "1",
+      name: 'with flights'
+    },
+    {
+      id: "2",
+      name: 'without flights'
+    }
+  ];
 
   // Biến để lưu trữ trạng thái của checkbox
-  facilities: string[] = [];
-  hostLanguages: string[] = [];
-  starCategories: string[] = [];
-  districts: string[] = [];
+  stripDuration: any[] = [];
+  traveType: any[] = [];
+  starCategories: any[] = [];
+  flights: any[] = [];
 
   @Output() rangeChange = new EventEmitter<{ value: number, highValue: number }>();
   @Output() filtersChange = new EventEmitter<{
-    facilities: string[],
-    hostLanguages: string[],
+    stripDuration: string[],
+    traveType: string[],
     starCategories: string[],
-    districts: string[]
+    flights: string[]
   }>();
 
 
@@ -58,10 +139,10 @@ export class SearchFilterTourComponent implements OnInit {
 
   applyFilters() {
     var data = {
-      facilities: this.facilities,
-      hostLanguages: this.hostLanguages,
+      stripDuration: this.stripDuration,
+      traveType: this.traveType,
       starCategories: this.starCategories,
-      districts: this.districts
+      flights: this.flights
     }
     this.hotelsService.setFilters(data);
   }
@@ -77,34 +158,34 @@ export class SearchFilterTourComponent implements OnInit {
 
   onFiltersChange() {
     this.filtersChange.emit({
-      facilities: this.facilities,
-      hostLanguages: this.hostLanguages,
+      stripDuration: this.stripDuration,
+      traveType: this.traveType,
       starCategories: this.starCategories,
-      districts: this.districts
+      flights: this.flights
     });
   }
 
-  toggleFacility(value: string) {
-    if (this.facilities.includes(value)) {
-      this.facilities = this.facilities.filter(item => item !== value);
+  toggleFacility(value: any) {
+    if (this.stripDuration.includes(value)) {
+      this.stripDuration = this.stripDuration.filter(item => item !== value);
     } else {
-      this.facilities.push(value);
+      this.stripDuration.push(value);
     }
     this.onFiltersChange();
     this.applyFilters();
   }
 
-  toggleHostLanguage(value: string) {
-    if (this.hostLanguages.includes(value)) {
-      this.hostLanguages = this.hostLanguages.filter(item => item !== value);
+  toggleHostLanguage(value: any) {
+    if (this.traveType.includes(value)) {
+      this.traveType = this.traveType.filter(item => item !== value);
     } else {
-      this.hostLanguages.push(value);
+      this.traveType.push(value);
     }
     this.onFiltersChange();
     this.applyFilters();
   }
 
-  toggleStarCategory(value: string) {
+  toggleStarCategory(value: any) {
     if (this.starCategories.includes(value)) {
       this.starCategories = this.starCategories.filter(item => item !== value);
     } else {
@@ -114,19 +195,18 @@ export class SearchFilterTourComponent implements OnInit {
     this.onFiltersChange();
   }
 
-  toggleDistrict(value: string) {
-    if (this.districts.includes(value)) {
-      this.districts = this.districts.filter(item => item !== value);
+  toggleDistrict(value: any) {
+    if (this.flights.includes(value)) {
+      this.flights = this.flights.filter(item => item !== value);
     } else {
-      this.districts.push(value);
+      this.flights.push(value);
     }
     this.applyFilters();
     this.onFiltersChange();
   }
 
-  getStarRating(star: string): number {
-    const starValue = star.split('_')[1];
-    return parseInt(starValue, 10);
+  getStarRating(star: any): number {
+    return parseInt(star.id, 10);
   }
 
 }

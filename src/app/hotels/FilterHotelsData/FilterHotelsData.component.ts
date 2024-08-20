@@ -210,6 +210,7 @@ export class FilterHotelsDataComponent implements OnInit {
   }
 
   applyFilters(filters: Filters) {
+    console.log(filters);
     this.filteredHotelItems = this.HotelItems.filter(item => {
       const filterFacilitiesLower = filters.facilities ? filters.facilities.map((facility: string) => facility.split("_").map(word => word.toLowerCase()).join(' ')) : [];
       const filterLanguagesLower = filters.hostLanguages ? filters.hostLanguages.map((language: string) => language.toLowerCase()) : [];

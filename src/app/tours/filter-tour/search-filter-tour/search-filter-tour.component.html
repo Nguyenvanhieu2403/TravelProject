@@ -6,9 +6,9 @@
           <h6 class="collapse-block-title">trip duration</h6>
           <div class="collection-collapse-block-content">
             <div class="collection-brand-filter">
-              <div class="form-check collection-filter-checkbox ng-star-inserted" *ngFor="let facility of facilitiesList">
-                <input type="checkbox" class="form-check-input" [id]="facility" [checked]="facilities.includes(facility)" (change)="toggleFacility(facility)">
-                <label class="form-check-label" [for]="facility">{{ facility.replace('_', ' ') }}</label>
+              <div class="form-check collection-filter-checkbox ng-star-inserted" *ngFor="let facility of stripDurations">
+                <input type="checkbox" class="form-check-input" [id]="facility.id" [checked]="stripDuration.includes(facility.id)" (change)="toggleFacility(facility)">
+                <label class="form-check-label" [for]="facility.id">{{ facility.name }}</label>
               </div>
            </div>
           </div>
@@ -19,9 +19,9 @@
           <h6 class="collapse-block-title">travel type</h6>
           <div class="collection-collapse-block-content">
             <div class="collection-brand-filter">
-              <div class="form-check collection-filter-checkbox ng-star-inserted" *ngFor="let language of ['family', 'honeymoon', 'beach', 'cruise', 'adventure', 'shopping']">
-                <input type="checkbox" class="form-check-input" [id]="language" (change)="toggleHostLanguage(language)">
-                <label class="form-check-label" [for]="language">{{ language.replace('_', ' ') }}</label>
+              <div class="form-check collection-filter-checkbox ng-star-inserted" *ngFor="let language of travelTypes">
+                <input type="checkbox" class="form-check-input" [id]="language.id" (change)="toggleHostLanguage(language)">
+                <label class="form-check-label" [for]="language.id">{{ language.name }}</label>
               </div>
             </div>
           </div>
@@ -32,9 +32,9 @@
           <h6 class="collapse-block-title">Star Categogy</h6>
           <div class="collection-collapse-block-content">
             <div class="collection-brand-filter star-categogy">
-              <div class="form-check collection-filter-checkbox ng-star-inserted" *ngFor="let star of ['star_5', 'star_4', 'star_3', 'star_2', 'star_1']">
-                <input type="checkbox" class="form-check-input" [id]="star" (change)="toggleStarCategory(star)">
-                <label class="form-check-label rating" [for]="star">
+              <div class="form-check collection-filter-checkbox ng-star-inserted" *ngFor="let star of stars">
+                <input type="checkbox" class="form-check-input" [id]="star.id" (change)="toggleStarCategory(star)">
+                <label class="form-check-label rating" [for]="star.id">
                   <ngb-rating [rate]="getStarRating(star)"></ngb-rating>
                 </label>
               </div>
@@ -47,9 +47,9 @@
           <h6 class="collapse-block-title">flights</h6>
           <div class="collection-collapse-block-content">
             <div class="collection-brand-filter">
-              <div class="form-check collection-filter-checkbox ng-star-inserted" *ngFor="let district of ['with flights', 'without flights']">
-                <input type="checkbox" class="form-check-input" [id]="district" (change)="toggleDistrict(district)">
-                <label class="form-check-label" [for]="district">{{ district.replace('_', ' ') }}</label>
+              <div class="form-check collection-filter-checkbox ng-star-inserted" *ngFor="let district of flightsList">
+                <input type="checkbox" class="form-check-input" [id]="district.id" (change)="toggleDistrict(district)">
+                <label class="form-check-label" [for]="district.id">{{ district.name }}</label>
               </div>
             </div>
           </div>

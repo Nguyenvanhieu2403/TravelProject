@@ -86,6 +86,7 @@ import { AnimationBirdComponent } from './tours/animation-bird/animation-bird.co
 import { SearchFilterTourComponent } from './tours/filter-tour/search-filter-tour/search-filter-tour.component';
 import { FilterTourComponent } from './tours/filter-tour/filter-tour.component';
 import { SearchTourLocationComponent } from './tours/search-tour-location/search-tour-location.component';
+import { FilterTourDataComponent } from './tours/filter-tour-data/filter-tour-data.component';
 
 @NgModule({
   imports: [
@@ -182,6 +183,7 @@ import { SearchTourLocationComponent } from './tours/search-tour-location/search
     SearchFilterTourComponent,
     FilterTourComponent,
     SearchTourLocationComponent,
+    FilterTourDataComponent
   ],
   providers: [CommonModule, DatePipe],
 })
